@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://labola-clisson.fr/sitemap.xml
