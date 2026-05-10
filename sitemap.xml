@@ -51,6 +51,16 @@
     </image:image>
   </url>
   <url>
+    <loc>http://labola-clisson.fr/mentions-legales/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <image:image>
+      <image:loc>http://labola-clisson.fr/assets/images/hero-1400.webp</image:loc>
+      <image:title>Mentions legales La Bola Clisson</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>http://labola-clisson.fr/cours/yoga-catherine-boue/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>

@@ -17,6 +17,7 @@ Public : grand public adulte, débutants selon les pratiques, seniors selon les 
 - [Planning](http://labola-clisson.fr/planning/)
 - [Intervenants](http://labola-clisson.fr/intervenants/)
 - [Contact](http://labola-clisson.fr/contact/)
+- [Mentions légales](http://labola-clisson.fr/mentions-legales/)
 
 ## Activités
 
