@@ -267,7 +267,10 @@ details p { color: var(--muted); margin-bottom: 0; }
 }
 .contact-band .eyebrow { color: var(--gold); }
 .contact-band p { max-width: 720px; color: rgba(255,255,255,.78); }
+.contact-band p a { color: #fff; font-weight: 800; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; }
 .contact-band .button.primary { background: #fff; color: var(--ink); border-color: #fff; }
+.contact-band .button.secondary { color: #fff; border-color: rgba(255,255,255,.72); background: transparent; }
 .site-footer {
   display: grid;
   gap: 1rem;
