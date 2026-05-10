@@ -160,4 +160,14 @@
       <image:title>Tehima avec Stephanie Douillard a Clisson</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>http://labola-clisson.fr/cours/yoga-carole-alice-le-bomin/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>http://labola-clisson.fr/assets/images/carole-alice-yoga-1400.webp</image:loc>
+      <image:title>Yoga avec Carole-Alice Le Bomin a Clisson</image:title>
+    </image:image>
+  </url>
 </urlset>
