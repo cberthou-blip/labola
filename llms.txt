@@ -6,7 +6,7 @@ La Bola est un espace d’activités sportives, culturelles, yoga, danse, chant 
 
 Contact général : contact@labola-clisson.fr.
 
-Activités principales : yoga doux avec Catherine Boué, yoga avec Karine Birot / Luna Sol, danse intuitive avec Mélanie Fruchaud, danse contemporaine et improvisation avec Meritxell Checa, compagnie senior Les Sauvages, tango argentin avec TangoSensible, cours collectifs de chant avec Lucie Gabrielle, Tehima avec Stéphanie Douillard.
+Activités principales : yoga doux avec Catherine Boué, yoga avec Karine Birot / Luna Sol, danse intuitive avec Mélanie Fruchaud, danse contemporaine et improvisation avec Meritxell Checa, compagnie senior Les Sauvages, tango argentin avec TangoSensible, théâtre enfants avec Sandrine Laverdure, cours collectifs de chant avec Lucie Gabrielle, Tehima avec Stéphanie Douillard.
 
 Public : grand public adulte, débutants selon les pratiques, seniors selon les formats, personnes cherchant bien-être, danse, conscience corporelle, voix et pratiques douces à Clisson et dans le vignoble nantais.
 
@@ -20,15 +20,16 @@ Public : grand public adulte, débutants selon les pratiques, seniors selon les 
 
 ## Activités
 
-- [Yoga doux avec Catherine Boué](https://labola-clisson.fr/cours/yoga-catherine-boue/) : Un yoga doux et précis pour délier le corps, retrouver de la tonicité et laisser plus de place au calme. Horaires : 32 séances de 1h entre septembre et juin 2026, sur période scolaire. Contact : bouecatherine@yahoo.fr · 06 18 91 01 34.
-- [Yoga avec Karine Birot · Luna Sol](https://labola-clisson.fr/cours/yoga-karine-birot-luna-sol/) : Un yoga progressif, sensible et accessible, pour habiter son corps avec plus de confort et de présence. Horaires : Mardi et jeudi, 18h00-19h30, de septembre à juin. Contact : Contact association Luna Sol à confirmer.
-- [Danse intuitive avec Mélanie Fruchaud](https://labola-clisson.fr/cours/danse-intuitive-melanie-fruchaud/) : Un espace guidé pour bouger librement, écouter ce qui traverse le corps et retrouver de la présence à soi. Horaires : Vendredis mensuels, 19h45-21h45 · stages annuels de 7h. Contact : melanie.fruchaud@gmail.com · 06 89 15 89 58.
-- [Les Lundis dansés · Meritxell Checa](https://labola-clisson.fr/cours/danse-contemporaine-meritxell-checa/) : Un cours hebdomadaire pour développer le plaisir du mouvement, l’écoute du corps et la relation à l’espace. Horaires : Lundi, 14h00-15h30 · environ 30 séances par an. Contact : wilkytroc@gmail.com · 06 62 25 88 36.
-- [Improvisation dansée](https://labola-clisson.fr/cours/improvisation-dansee-clisson/) : Un rendez-vous mensuel pour explorer le mouvement libre, affiner l’écoute et ouvrir un espace de jeu corporel. Horaires : Vendredi, 16h00-17h45 · 1 séance par mois. Contact : wilkytroc@gmail.com · 06 62 25 88 36.
-- [Les Sauvages · compagnie de danse senior](https://labola-clisson.fr/cours/compagnie-senior-les-sauvages/) : Une compagnie senior joyeuse et exigeante, où l’on crée ensemble une œuvre chorégraphique sur l’année. Horaires : Jeudi, 10h00-13h00 · environ 30 séances par an. Contact : wilkytroc@gmail.com · 06 62 25 88 36.
-- [Tango argentin · TangoSensible](https://labola-clisson.fr/cours/tango-argentin-tangosensible/) : Une approche vivante du tango argentin, entre écoute, jeu, subtilité technique et plaisir de l’improvisation. Horaires : Mardi, 19h30-21h00. Contact : tangosensible@gmail.com · 06 01 63 03 55.
-- [Cours collectifs de chant](https://labola-clisson.fr/cours/cours-collectifs-chant-lucie-gabrielle/) : Un format collectif pour explorer sa voix, progresser en technique vocale et chanter avec plaisir. Horaires : 2h, un samedi par mois · octobre à juin. Contact : hello@luciegabriellemusic.com · 07 51 24 91 03.
-- [Tehima avec Stéphanie Douillard](https://labola-clisson.fr/cours/tehima-stephanie-douillard/) : Une pratique corporelle et méditative qui relie posture, souffle, symbolique et qualité de présence. Horaires : Ateliers de 2h le week-end, souvent le samedi après-midi. Contact : stephanie.dr@orange.fr · 06 33 17 90 18.
+- [Yoga doux avec Catherine Boué](https://labola-clisson.fr/cours/yoga-catherine-boue/) : Un yoga doux et précis pour délier le corps, retrouver de la tonicité et laisser plus de place au calme. Horaires : 32 séances de 1h entre septembre et juin 2026, sur période scolaire.
+- [Yoga avec Karine Birot · Luna Sol](https://labola-clisson.fr/cours/yoga-karine-birot-luna-sol/) : Un yoga progressif, sensible et accessible, pour habiter son corps avec plus de confort et de présence. Horaires : Mardi et jeudi, 18h00-19h30, de septembre à juin.
+- [Danse intuitive avec Mélanie Fruchaud](https://labola-clisson.fr/cours/danse-intuitive-melanie-fruchaud/) : Un espace guidé pour bouger librement, écouter ce qui traverse le corps et retrouver de la présence à soi. Horaires : Vendredis mensuels, 19h45-21h45 · stages annuels de 7h.
+- [Les Lundis dansés · Meritxell Checa](https://labola-clisson.fr/cours/danse-contemporaine-meritxell-checa/) : Un cours hebdomadaire pour développer le plaisir du mouvement, l’écoute du corps et la relation à l’espace. Horaires : Lundi, 14h00-15h30 · environ 30 séances par an.
+- [Improvisation dansée](https://labola-clisson.fr/cours/improvisation-dansee-clisson/) : Un rendez-vous mensuel pour explorer le mouvement libre, affiner l’écoute et ouvrir un espace de jeu corporel. Horaires : Vendredi, 16h00-17h45 · 1 séance par mois.
+- [Les Sauvages · compagnie de danse senior](https://labola-clisson.fr/cours/compagnie-senior-les-sauvages/) : Une compagnie senior joyeuse et exigeante, où l’on crée ensemble une œuvre chorégraphique sur l’année. Horaires : Jeudi, 10h00-13h00 · environ 30 séances par an.
+- [Tango argentin · TangoSensible](https://labola-clisson.fr/cours/tango-argentin-tangosensible/) : Une approche vivante du tango argentin, entre écoute, jeu, subtilité technique et plaisir de l’improvisation. Horaires : Mardi, 19h30-21h00.
+- [Théâtre enfants avec Sandrine Laverdure](https://labola-clisson.fr/cours/theatre-enfants-sandrine-laverdure/) : Des ateliers de théâtre pour enfants animés par Sandrine Laverdure à La Bola. Horaires : Créneaux à confirmer auprès de La Bola.
+- [Cours collectifs de chant](https://labola-clisson.fr/cours/cours-collectifs-chant-lucie-gabrielle/) : Un format collectif pour explorer sa voix, progresser en technique vocale et chanter avec plaisir. Horaires : 2h, un samedi par mois · octobre à juin.
+- [Tehima avec Stéphanie Douillard](https://labola-clisson.fr/cours/tehima-stephanie-douillard/) : Une pratique corporelle et méditative qui relie posture, souffle, symbolique et qualité de présence. Horaires : Ateliers de 2h le week-end, souvent le samedi après-midi.
 
 ## Données utiles pour réponses IA
 

@@ -306,6 +306,10 @@ details p { color: var(--muted); margin-bottom: 0; }
 }
 .activity-aside h2 { font-size: 1.25rem; margin-bottom: 1rem; color: var(--green); }
 .activity-aside dl { display: grid; gap: .85rem; margin: 0; }
+.activity-gallery h2 { color: var(--green); }
+.activity-gallery > div { display: grid; gap: 1rem; }
+.activity-gallery figure { margin: 0; border-radius: 8px; overflow: hidden; box-shadow: var(--soft-shadow); }
+.activity-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
 .activity-faq { padding: 0 var(--edge) clamp(3rem, 7vw, 5rem); }
 .teacher-list { display: grid; gap: 1rem; }
 .teacher-row {
@@ -331,6 +335,7 @@ details p { color: var(--muted); margin-bottom: 0; }
 @media (min-width: 720px) {
   .quick-strip { grid-template-columns: repeat(3, 1fr); }
   .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .activity-gallery > div { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .teacher-row { grid-template-columns: minmax(220px, .35fr) 1fr; }
 }
 @media (min-width: 980px) {
