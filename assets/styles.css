@@ -59,31 +59,6 @@ img { display: block; max-width: 100%; height: auto; }
   text-decoration: none;
   white-space: nowrap;
 }
-.social-links {
-  display: none;
-  align-items: center;
-  gap: .35rem;
-}
-.social-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border: 1px solid rgba(49, 92, 69, .22);
-  border-radius: 999px;
-  background: #fff;
-  color: var(--green);
-  font-size: .78rem;
-  font-weight: 900;
-  text-decoration: none;
-  text-transform: uppercase;
-  box-shadow: 0 1px 0 rgba(24, 23, 22, .04);
-}
-.social-link:hover {
-  border-color: rgba(49, 92, 69, .5);
-  box-shadow: var(--soft-shadow);
-}
 .hero {
   min-height: 68svh;
   position: relative;
@@ -385,7 +360,7 @@ details p { color: var(--muted); margin-bottom: 0; }
   .teacher-row { grid-template-columns: minmax(220px, .35fr) 1fr; }
 }
 @media (min-width: 980px) {
-  .header-cta, .social-links { display: inline-flex; }
+  .header-cta { display: inline-flex; }
   .intro-grid, .split-panel, .local-seo, .contact-layout { grid-template-columns: .75fr 1.25fr; }
   .practice-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .activity-hero { grid-template-columns: .9fr .75fr; }
