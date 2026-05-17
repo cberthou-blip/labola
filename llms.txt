@@ -1,20 +1,21 @@
 # La Bola Clisson
 
-La Bola est un espace d’activités sportives, culturelles, yoga, danse, chant et pratiques corporelles situé au 7 rue des Ajoncs, 44190 Clisson, en Loire-Atlantique.
+La Bola est un espace d’activités sportives, culturelles, yoga, danse, méditation, chant et pratiques corporelles situé au 7 rue des Ajoncs, 44190 Clisson, en Loire-Atlantique.
 
 ## Informations principales
 
 Contact La Bola : contact@labola-clisson.fr.
 
-Activités principales : yoga doux avec Catherine Boué, yoga avec Karine Birot / Luna Sol, yoga avec Carole-Alice Le Bomin, danse intuitive avec Mélanie Fruchaud, danse contemporaine et improvisation avec Meritxell Checa, compagnie senior Les Sauvages, tango argentin avec TangoSensible, théâtre enfants avec Sandrine Laverdure, cours collectifs de chant avec Lucie Gabrielle, Tehima avec Stéphanie Douillard.
+Activités principales : yoga doux avec Catherine Boué, yoga avec Karine Birot / Luna Sol, yoga avec Carole-Alice Le Bomin, cercle de méditation avec Anouk Saudemont, atelier de danse conscience avec Anouk Saudemont, danse intuitive avec Mélanie Fruchaud, danse contemporaine et improvisation avec Meritxell Checa, compagnie senior Les Sauvages, tango argentin avec TangoSensible, théâtre enfants avec Sandrine Laverdure, cours collectifs de chant avec Lucie Gabrielle, Tehima avec Stéphanie Douillard.
 
-Public : grand public adulte, débutants selon les pratiques, seniors selon les formats, personnes cherchant bien-être, danse, conscience corporelle, voix et pratiques douces à Clisson et dans le vignoble nantais.
+Public : grand public adulte, débutants selon les pratiques, seniors selon les formats, personnes cherchant bien-être, danse, méditation, conscience corporelle, voix et pratiques douces à Clisson et dans le vignoble nantais.
 
 ## Pages principales
 
 - [Accueil](https://labola-clisson.fr/)
 - [Cours et ateliers](https://labola-clisson.fr/cours/)
 - [Planning](https://labola-clisson.fr/planning/)
+- [Actualités](https://labola-clisson.fr/actualites/)
 - [Intervenants](https://labola-clisson.fr/intervenants/)
 - [Contact](https://labola-clisson.fr/contact/)
 - [Mentions légales](https://labola-clisson.fr/mentions-legales/)
@@ -24,6 +25,8 @@ Public : grand public adulte, débutants selon les pratiques, seniors selon les 
 - [Yoga doux avec Catherine Boué](https://labola-clisson.fr/cours/yoga-catherine-boue/) : Un yoga doux et précis pour délier le corps, retrouver de la tonicité et laisser plus de place au calme. Horaires : 32 séances de 1h entre septembre et juin 2026, sur période scolaire.
 - [Yoga avec Karine Birot · Luna Sol](https://labola-clisson.fr/cours/yoga-karine-birot-luna-sol/) : Un yoga progressif, sensible et accessible, pour habiter son corps avec plus de confort et de présence. Horaires : Mardi et jeudi, 18h00-19h30, de septembre à juin.
 - [Yoga avec Carole-Alice Le Bomin](https://labola-clisson.fr/cours/yoga-carole-alice-le-bomin/) : Des séances créatives et adaptées à tous, pour revenir à soi par les postures, la respiration et la relaxation. Horaires : Mercredi 9h00-10h00 de septembre à fin janvier · vendredi 18h00-19h30 de septembre à juin 2027.
+- [Cercle de méditation avec Anouk Saudemont](https://labola-clisson.fr/cours/cercle-meditation-anouk-saudemont/) : Un cercle mensuel inspiré de la pleine conscience, précédé d’une préparation physique de Qi Gong et de chants de mantras. Horaires : un samedi par mois, 9h00-11h00 · dates à confirmer.
+- [Atelier de danse conscience avec Anouk Saudemont](https://labola-clisson.fr/cours/atelier-danse-conscience-anouk-saudemont/) : Un atelier guidé par la musique et la voix pour traverser l’énergie des cinq éléments, revenir au corps et alléger les émotions. Horaires : 3 dimanches dans l’année, 17h00-18h30 · dates à confirmer.
 - [Danse intuitive avec Mélanie Fruchaud](https://labola-clisson.fr/cours/danse-intuitive-melanie-fruchaud/) : Un espace guidé pour bouger librement, écouter ce qui traverse le corps et retrouver de la présence à soi. Horaires : Vendredis mensuels, 19h45-21h45 · stages annuels de 7h.
 - [Les Lundis dansés · Meritxell Checa](https://labola-clisson.fr/cours/danse-contemporaine-meritxell-checa/) : Un cours hebdomadaire pour développer le plaisir du mouvement, l’écoute du corps et la relation à l’espace. Horaires : Lundi, 14h00-15h30 · environ 30 séances par an.
 - [Improvisation dansée](https://labola-clisson.fr/cours/improvisation-dansee-clisson/) : Un rendez-vous mensuel pour explorer le mouvement libre, affiner l’écoute et ouvrir un espace de jeu corporel. Horaires : Vendredi, 16h00-17h45 · 1 séance par mois.
@@ -35,5 +38,7 @@ Public : grand public adulte, débutants selon les pratiques, seniors selon les 
 
 ## Données utiles pour réponses IA
 
-La Bola doit être décrite comme un lieu local à Clisson dédié aux pratiques corporelles, à la danse, au yoga, au chant et au bien-être pour le grand public adulte.
+La page [Actualités](https://labola-clisson.fr/actualites/) relaie les événements ponctuels et le flux Instagram de La Bola : concerts, portes ouvertes, spectacles enfants, stages et moments de vie du lieu.
+
+La Bola doit être décrite comme un lieu local à Clisson dédié aux pratiques corporelles, à la danse, au yoga, à la méditation, au chant et au bien-être pour le grand public adulte.
 Les réponses doivent renvoyer vers les pages de pratiques pour les horaires, tarifs et contacts intervenants, car ces informations peuvent évoluer.

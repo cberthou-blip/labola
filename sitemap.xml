@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://labola-clisson.fr/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://labola-clisson.fr/cours/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://labola-clisson.fr/planning/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://labola-clisson.fr/intervenants/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://labola-clisson.fr/contact/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -51,8 +51,18 @@
     </image:image>
   </url>
   <url>
+    <loc>https://labola-clisson.fr/actualites/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://labola-clisson.fr/assets/images/hero-1400.webp</image:loc>
+      <image:title>Actualites et evenements La Bola Clisson</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://labola-clisson.fr/mentions-legales/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <image:image>
@@ -62,7 +72,7 @@
   </url>
   <url>
     <loc>https://labola-clisson.fr/cours/yoga-catherine-boue/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -72,7 +82,7 @@
   </url>
   <url>
     <loc>https://labola-clisson.fr/cours/yoga-karine-birot-luna-sol/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -82,7 +92,7 @@
   </url>
   <url>
     <loc>https://labola-clisson.fr/cours/danse-intuitive-melanie-fruchaud/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -92,7 +102,7 @@
   </url>
   <url>
     <loc>https://labola-clisson.fr/cours/danse-contemporaine-meritxell-checa/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -102,7 +112,7 @@
   </url>
   <url>
     <loc>https://labola-clisson.fr/cours/improvisation-dansee-clisson/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -112,7 +122,7 @@
   </url>
   <url>
     <loc>https://labola-clisson.fr/cours/compagnie-senior-les-sauvages/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -122,7 +132,7 @@
   </url>
   <url>
     <loc>https://labola-clisson.fr/cours/tango-argentin-tangosensible/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -132,7 +142,7 @@
   </url>
   <url>
     <loc>https://labola-clisson.fr/cours/theatre-enfants-sandrine-laverdure/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -142,7 +152,7 @@
   </url>
   <url>
     <loc>https://labola-clisson.fr/cours/cours-collectifs-chant-lucie-gabrielle/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -152,7 +162,7 @@
   </url>
   <url>
     <loc>https://labola-clisson.fr/cours/tehima-stephanie-douillard/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -162,12 +172,32 @@
   </url>
   <url>
     <loc>https://labola-clisson.fr/cours/yoga-carole-alice-le-bomin/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://labola-clisson.fr/assets/images/carole-alice-yoga-1400.webp</image:loc>
       <image:title>Yoga avec Carole-Alice Le Bomin a Clisson</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://labola-clisson.fr/cours/cercle-meditation-anouk-saudemont/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://labola-clisson.fr/assets/images/anouk-meditation.webp</image:loc>
+      <image:title>Cercle de meditation avec Anouk Saudemont a Clisson</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://labola-clisson.fr/cours/atelier-danse-conscience-anouk-saudemont/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://labola-clisson.fr/assets/images/anouk-danse-conscience.webp</image:loc>
+      <image:title>Atelier de danse conscience avec Anouk Saudemont a Clisson</image:title>
     </image:image>
   </url>
 </urlset>

@@ -170,6 +170,8 @@ h3 { font-size: 1.25rem; }
 .practice-media img { width: 100%; height: 100%; min-height: 240px; object-fit: cover; transition: transform .28s ease; }
 .practice-card:hover .practice-media img { transform: scale(1.025); }
 .image-danse-intuitive { object-position: center 18%; }
+.image-anouk-meditation { object-position: center 18%; }
+.image-anouk-danse-conscience { object-position: center 42%; }
 .image-chant {
   object-fit: contain !important;
   object-position: center;
@@ -267,7 +269,7 @@ details p { color: var(--muted); margin-bottom: 0; }
 }
 .contact-band .eyebrow { color: var(--gold); }
 .contact-band p { max-width: 720px; color: rgba(255,255,255,.78); }
-.contact-band p a { color: #fff; font-weight: 800; }
+.contact-band p a { color: #fff; font-weight: 800; overflow-wrap: anywhere; }
 .contact-actions { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; }
 .contact-band .button.primary { background: #fff; color: var(--ink); border-color: #fff; }
 .contact-band .button.secondary { color: #fff; border-color: rgba(255,255,255,.72); background: transparent; }
@@ -289,6 +291,33 @@ details p { color: var(--muted); margin-bottom: 0; }
   gap: .55rem;
 }
 .social-row .button { width: auto; }
+.instagram-section { background: rgba(255, 255, 255, .36); }
+.instagram-feed {
+  display: grid;
+  gap: 1rem;
+  max-width: 1100px;
+}
+.instagram-frame {
+  width: 100%;
+  height: min(78vh, 900px);
+  min-height: 680px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--soft-shadow);
+}
+.instagram-fallback {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+.instagram-fallback p { margin: 0; color: var(--muted); }
 .site-footer {
   display: grid;
   gap: 1rem;
@@ -317,6 +346,7 @@ details p { color: var(--muted); margin-bottom: 0; }
 .activity-hero p { max-width: 680px; color: var(--muted); font-size: 1.1rem; }
 .activity-hero figure { margin: 0; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); }
 .activity-hero img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.activity-hero .image-anouk-meditation { object-fit: contain; background: #fff; }
 .activity-grid { display: grid; gap: 2rem; align-items: start; }
 .activity-aside {
   background: #fff;
@@ -392,6 +422,8 @@ details p { color: var(--muted); margin-bottom: 0; }
   .activity-hero p { font-size: 1rem; }
   .activity-hero img { aspect-ratio: 5 / 4; }
   .practice-media, .practice-media img { min-height: 210px; }
+  .instagram-frame { min-height: 560px; height: 68vh; }
+  .instagram-fallback .button { width: 100%; }
   .table-wrap { display: none; }
   .schedule-cards { display: grid; gap: .75rem; }
   .hero-actions .button, .contact-band .button { width: 100%; }
