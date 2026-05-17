@@ -1,172 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>http://labola-clisson.fr/</loc>
+    <loc>https://labola-clisson.fr/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/hero-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/hero-1400.webp</image:loc>
       <image:title>La Bola Clisson</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://labola-clisson.fr/cours/</loc>
+    <loc>https://labola-clisson.fr/cours/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/hero-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/hero-1400.webp</image:loc>
       <image:title>Cours et ateliers La Bola Clisson</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://labola-clisson.fr/planning/</loc>
+    <loc>https://labola-clisson.fr/planning/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/hero-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/hero-1400.webp</image:loc>
       <image:title>Planning La Bola Clisson</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://labola-clisson.fr/intervenants/</loc>
+    <loc>https://labola-clisson.fr/intervenants/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/hero-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/hero-1400.webp</image:loc>
       <image:title>Intervenants La Bola Clisson</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://labola-clisson.fr/contact/</loc>
+    <loc>https://labola-clisson.fr/contact/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/hero-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/hero-1400.webp</image:loc>
       <image:title>Contact La Bola Clisson</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://labola-clisson.fr/mentions-legales/</loc>
+    <loc>https://labola-clisson.fr/mentions-legales/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/hero-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/hero-1400.webp</image:loc>
       <image:title>Mentions legales La Bola Clisson</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://labola-clisson.fr/cours/yoga-catherine-boue/</loc>
+    <loc>https://labola-clisson.fr/cours/yoga-catherine-boue/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/catherine-yoga-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/catherine-yoga-1400.webp</image:loc>
       <image:title>Yoga doux avec Catherine Boue a Clisson</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://labola-clisson.fr/cours/yoga-karine-birot-luna-sol/</loc>
+    <loc>https://labola-clisson.fr/cours/yoga-karine-birot-luna-sol/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/karine-yoga-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/karine-yoga-1400.webp</image:loc>
       <image:title>Yoga avec Karine Birot a Clisson</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://labola-clisson.fr/cours/danse-intuitive-melanie-fruchaud/</loc>
+    <loc>https://labola-clisson.fr/cours/danse-intuitive-melanie-fruchaud/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/danse-intuitive-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/danse-intuitive-1400.webp</image:loc>
       <image:title>Danse intuitive avec Melanie Fruchaud a Clisson</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://labola-clisson.fr/cours/danse-contemporaine-meritxell-checa/</loc>
+    <loc>https://labola-clisson.fr/cours/danse-contemporaine-meritxell-checa/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/danse-contemporaine-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/danse-contemporaine-1400.webp</image:loc>
       <image:title>Danse contemporaine a Clisson</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://labola-clisson.fr/cours/improvisation-dansee-clisson/</loc>
+    <loc>https://labola-clisson.fr/cours/improvisation-dansee-clisson/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/improvisation-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/improvisation-1400.webp</image:loc>
       <image:title>Improvisation dansee a Clisson</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://labola-clisson.fr/cours/compagnie-senior-les-sauvages/</loc>
+    <loc>https://labola-clisson.fr/cours/compagnie-senior-les-sauvages/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/sauvages-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/sauvages-1400.webp</image:loc>
       <image:title>Compagnie de danse senior Les Sauvages a Clisson</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://labola-clisson.fr/cours/tango-argentin-tangosensible/</loc>
+    <loc>https://labola-clisson.fr/cours/tango-argentin-tangosensible/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/tango-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/tango-1400.webp</image:loc>
       <image:title>Tango argentin a Clisson</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://labola-clisson.fr/cours/theatre-enfants-sandrine-laverdure/</loc>
+    <loc>https://labola-clisson.fr/cours/theatre-enfants-sandrine-laverdure/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/theatre-enfants-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/theatre-enfants-1400.webp</image:loc>
       <image:title>Theatre enfants a Clisson</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://labola-clisson.fr/cours/cours-collectifs-chant-lucie-gabrielle/</loc>
+    <loc>https://labola-clisson.fr/cours/cours-collectifs-chant-lucie-gabrielle/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/chant-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/chant-1400.webp</image:loc>
       <image:title>Cours collectifs de chant a Clisson</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://labola-clisson.fr/cours/tehima-stephanie-douillard/</loc>
+    <loc>https://labola-clisson.fr/cours/tehima-stephanie-douillard/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/tehima-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/tehima-1400.webp</image:loc>
       <image:title>Tehima avec Stephanie Douillard a Clisson</image:title>
     </image:image>
   </url>
   <url>
-    <loc>http://labola-clisson.fr/cours/yoga-carole-alice-le-bomin/</loc>
+    <loc>https://labola-clisson.fr/cours/yoga-carole-alice-le-bomin/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>http://labola-clisson.fr/assets/images/carole-alice-yoga-1400.webp</image:loc>
+      <image:loc>https://labola-clisson.fr/assets/images/carole-alice-yoga-1400.webp</image:loc>
       <image:title>Yoga avec Carole-Alice Le Bomin a Clisson</image:title>
     </image:image>
   </url>
