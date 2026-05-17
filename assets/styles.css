@@ -154,6 +154,8 @@ h3 { font-size: 1.25rem; }
 }
 .practice-card {
   display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
   background: #fff;
   border: 1px solid rgba(221, 216, 204, .82);
   border-radius: 8px;
@@ -166,8 +168,14 @@ h3 { font-size: 1.25rem; }
   box-shadow: var(--soft-shadow);
   border-color: rgba(49, 92, 69, .25);
 }
-.practice-media { min-height: 240px; background: var(--wash); overflow: hidden; }
-.practice-media img { width: 100%; height: 100%; min-height: 240px; object-fit: cover; transition: transform .28s ease; }
+.practice-media {
+  display: block;
+  aspect-ratio: 4 / 3;
+  background: var(--wash);
+  overflow: hidden;
+}
+.practice-media picture { display: block; width: 100%; height: 100%; }
+.practice-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .28s ease; }
 .practice-card:hover .practice-media img { transform: scale(1.025); }
 .image-danse-intuitive { object-position: center 18%; }
 .image-anouk-meditation { object-position: center 18%; }
@@ -178,12 +186,18 @@ h3 { font-size: 1.25rem; }
   background: #fff;
   padding: .35rem;
 }
-.practice-copy { padding: 1.15rem; }
+.practice-copy {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  padding: 1.15rem;
+}
 .practice-copy h3 a { text-decoration: none; }
-.practice-copy p { color: var(--muted); }
+.practice-copy p { margin: 0; color: var(--muted); }
 .card-link {
   display: inline-flex;
-  margin-top: 1rem;
+  margin-top: auto;
+  padding-top: .35rem;
   color: var(--green);
   font-weight: 800;
   text-decoration: none;
@@ -192,7 +206,7 @@ h3 { font-size: 1.25rem; }
 .mini-facts {
   display: grid;
   gap: .7rem;
-  margin: 1rem 0 0;
+  margin: .15rem 0 0;
 }
 .mini-facts div, .activity-aside dl div {
   padding-top: .7rem;
@@ -291,33 +305,83 @@ details p { color: var(--muted); margin-bottom: 0; }
   gap: .55rem;
 }
 .social-row .button { width: auto; }
-.instagram-section { background: rgba(255, 255, 255, .36); }
-.instagram-feed {
-  display: grid;
-  gap: 1rem;
-  max-width: 1100px;
+.instagram-section {
+  background: rgba(255, 255, 255, .42);
+  border-block: 1px solid rgba(221, 216, 204, .7);
 }
-.instagram-frame {
-  width: 100%;
-  height: min(78vh, 900px);
-  min-height: 680px;
+.instagram-layout {
+  display: grid;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: start;
+  max-width: 1180px;
+  margin-inline: auto;
+}
+.instagram-copy {
+  max-width: 560px;
+}
+.instagram-copy p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+.instagram-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+.instagram-module {
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
   box-shadow: var(--soft-shadow);
 }
-.instagram-fallback {
+.instagram-topbar {
   display: flex;
-  flex-wrap: wrap;
-  gap: .75rem;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  gap: 1rem;
+  padding: .85rem 1rem;
+  border-bottom: 1px solid var(--line);
+  background: #fbfaf6;
+}
+.instagram-topbar span {
+  color: var(--green);
+  font-weight: 850;
+}
+.instagram-topbar a {
+  color: var(--clay);
+  font-size: .92rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+.instagram-viewport {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: min(58vh, 560px);
+  min-height: 500px;
+  padding: 1.25rem;
+  overflow: hidden;
   background: #fff;
 }
-.instagram-fallback p { margin: 0; color: var(--muted); }
+.instagram-frame {
+  width: 390px;
+  height: 360px;
+  min-height: 360px;
+  border: 0;
+  background: #fff;
+  transform: scale(1.36);
+  transform-origin: top center;
+}
+.instagram-note {
+  margin: 0;
+  padding: .85rem 1rem 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .95rem;
+}
 .site-footer {
   display: grid;
   gap: 1rem;
@@ -392,6 +456,7 @@ details p { color: var(--muted); margin-bottom: 0; }
 @media (min-width: 980px) {
   .header-cta { display: inline-flex; }
   .intro-grid, .split-panel, .local-seo, .contact-layout { grid-template-columns: .75fr 1.25fr; }
+  .instagram-layout { grid-template-columns: minmax(280px, .55fr) minmax(540px, 1fr); }
   .practice-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .activity-hero { grid-template-columns: .9fr .75fr; }
   .activity-grid { grid-template-columns: 340px 1fr; }
@@ -421,9 +486,22 @@ details p { color: var(--muted); margin-bottom: 0; }
   .activity-hero h1 { max-width: 13ch; }
   .activity-hero p { font-size: 1rem; }
   .activity-hero img { aspect-ratio: 5 / 4; }
-  .practice-media, .practice-media img { min-height: 210px; }
-  .instagram-frame { min-height: 560px; height: 68vh; }
-  .instagram-fallback .button { width: 100%; }
+  .practice-media { min-height: 210px; }
+  .instagram-actions .button { width: 100%; }
+  .instagram-topbar { padding-inline: .85rem; }
+  .instagram-viewport {
+    height: 62vh;
+    min-height: 420px;
+    padding: .75rem;
+    overflow: auto;
+  }
+  .instagram-frame {
+    width: 100%;
+    min-width: 300px;
+    height: 420px;
+    min-height: 420px;
+    transform: none;
+  }
   .table-wrap { display: none; }
   .schedule-cards { display: grid; gap: .75rem; }
   .hero-actions .button, .contact-band .button { width: 100%; }
