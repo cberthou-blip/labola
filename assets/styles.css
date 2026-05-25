@@ -391,6 +391,13 @@ details p { color: var(--muted); margin-bottom: 0; }
 }
 .site-footer strong { color: #fff; }
 .site-footer a { color: #fff; }
+.site-footer .footer-credit {
+  color: rgba(255,255,255,.56);
+  font-size: .88rem;
+}
+.site-footer .footer-credit a {
+  color: rgba(255,255,255,.72);
+}
 .page-hero {
   padding: clamp(4.2rem, 9vw, 6.4rem) var(--edge) clamp(2.2rem, 5vw, 3.4rem);
   background: linear-gradient(135deg, var(--wash), #fbfaf6 78%);
