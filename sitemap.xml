@@ -77,7 +77,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://labola-clisson.fr/assets/images/flamenco-2026-2027.jpg</image:loc>
-      <image:title>Flamenco avec La Juana à Clisson</image:title>
+      <image:title>Flamenco à Clisson</image:title>
     </image:image>
   </url>
   <url>
@@ -86,8 +86,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://labola-clisson.fr/assets/images/logo-la-bola.png</image:loc>
-      <image:title>Afrovibes avec Ade Adekambi à Clisson</image:title>
+      <image:loc>https://labola-clisson.fr/assets/images/danse-intuitive-studio-1400.webp</image:loc>
+      <image:title>Afrovibes à Clisson</image:title>
     </image:image>
   </url>
   <url>
@@ -96,8 +96,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://labola-clisson.fr/assets/images/logo-la-bola.png</image:loc>
-      <image:title>Danses d'Afrique de l'Ouest avec musiciens à Clisson</image:title>
+      <image:loc>https://labola-clisson.fr/assets/images/danse-intuitive-studio-1400.webp</image:loc>
+      <image:title>Danses d&#x27;Afrique de l&#x27;Ouest à Clisson</image:title>
     </image:image>
   </url>
   <url>
@@ -107,7 +107,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://labola-clisson.fr/assets/images/danse-intuitive-1400.webp</image:loc>
-      <image:title>Danse intuitive avec Mélanie Fruchaud à Clisson</image:title>
+      <image:title>Danse intuitive à Clisson</image:title>
     </image:image>
   </url>
   <url>
@@ -117,7 +117,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://labola-clisson.fr/assets/images/anouk-danse-conscience.webp</image:loc>
-      <image:title>Atelier de danse conscience avec Anouk Saudemont à Clisson</image:title>
+      <image:title>Danse conscience à Clisson</image:title>
     </image:image>
   </url>
   <url>
@@ -127,7 +127,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://labola-clisson.fr/assets/images/danse-contemporaine-1400.webp</image:loc>
-      <image:title>Les Lundis dansés · Meritxell Checa à Clisson</image:title>
+      <image:title>Danse contemporaine à Clisson</image:title>
     </image:image>
   </url>
   <url>
@@ -147,7 +147,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://labola-clisson.fr/assets/images/sauvages-1400.webp</image:loc>
-      <image:title>Les Sauvages · compagnie de danse senior à Clisson</image:title>
+      <image:title>Danse senior à Clisson</image:title>
     </image:image>
   </url>
   <url>
@@ -157,7 +157,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://labola-clisson.fr/assets/images/tango-1400.webp</image:loc>
-      <image:title>Tango argentin · TangoSensible à Clisson</image:title>
+      <image:title>Tango argentin à Clisson</image:title>
     </image:image>
   </url>
   <url>
@@ -167,7 +167,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://labola-clisson.fr/assets/images/theatre-enfants-1400.webp</image:loc>
-      <image:title>Théâtre enfants avec Sandrine Laverdure à Clisson</image:title>
+      <image:title>Théâtre enfants à Clisson</image:title>
     </image:image>
   </url>
   <url>
@@ -177,7 +177,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://labola-clisson.fr/assets/images/tehima-1400.webp</image:loc>
-      <image:title>Téhima avec Stéphanie Douillard à Clisson</image:title>
+      <image:title>Téhima à Clisson</image:title>
     </image:image>
   </url>
   <url>
@@ -197,7 +197,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://labola-clisson.fr/assets/images/anouk-meditation.webp</image:loc>
-      <image:title>Cercle de méditation avec Anouk Saudemont à Clisson</image:title>
+      <image:title>Cercle de méditation à Clisson</image:title>
     </image:image>
   </url>
   <url>
@@ -207,7 +207,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://labola-clisson.fr/assets/images/chant-1400.webp</image:loc>
-      <image:title>Cours collectifs de chant à Clisson</image:title>
+      <image:title>Chant collectif à Clisson</image:title>
     </image:image>
   </url>
   <url>
@@ -217,7 +217,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://labola-clisson.fr/assets/images/catherine-yoga-1400.webp</image:loc>
-      <image:title>Yoga doux avec Catherine Boué à Clisson</image:title>
+      <image:title>Yoga doux à Clisson</image:title>
     </image:image>
   </url>
   <url>
@@ -227,7 +227,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://labola-clisson.fr/assets/images/karine-yoga-1400.webp</image:loc>
-      <image:title>Yoga avec Karine Birot · Luna Sol à Clisson</image:title>
+      <image:title>Yoga Luna Sol à Clisson</image:title>
     </image:image>
   </url>
   <url>
@@ -237,7 +237,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://labola-clisson.fr/assets/images/carole-alice-yoga-1400.webp</image:loc>
-      <image:title>Yoga avec Carole-Alice Le Bomin à Clisson</image:title>
+      <image:title>Yoga et mouvements au sol à Clisson</image:title>
     </image:image>
   </url>
 </urlset>

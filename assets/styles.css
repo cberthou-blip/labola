@@ -307,6 +307,7 @@ details p { color: var(--muted); margin-bottom: 0; }
 .contact-band .eyebrow { color: var(--gold); }
 .contact-band p { max-width: 720px; color: rgba(255,255,255,.78); }
 .contact-band p a { color: #fff; font-weight: 800; overflow-wrap: anywhere; }
+.contact-band .text-cta { color: #fff; }
 .contact-actions { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; }
 .contact-band .button.primary { background: #fff; color: var(--ink); border-color: #fff; }
 .contact-band .button.secondary { color: #fff; border-color: rgba(255,255,255,.72); background: transparent; }
@@ -956,5 +957,244 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   }
   .home-page .mobile-cta {
     display: flex;
+  }
+}
+
+/* UX action, badges and SEO content pass. */
+.activity-actions,
+.page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.status-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  align-items: center;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: .22rem .48rem;
+  border: 1px solid rgba(221, 216, 204, .95);
+  border-radius: 6px;
+  background: #fbfaf6;
+  color: var(--muted);
+  font-size: .78rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.badge-weekly,
+.badge-monthly {
+  color: var(--green);
+  background: var(--wash);
+  border-color: rgba(49, 92, 69, .2);
+}
+
+.badge-tbc {
+  color: var(--clay);
+  background: #fff7f0;
+  border-color: rgba(168, 79, 54, .22);
+}
+
+.badge-children {
+  color: var(--blue);
+  background: #eef6f5;
+  border-color: rgba(36, 106, 115, .22);
+}
+
+.badge-adults {
+  color: var(--green);
+}
+
+.course-facts {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .52rem .7rem;
+}
+
+.course-facts div {
+  min-width: 0;
+}
+
+.course-facts dt {
+  font-size: .8rem;
+}
+
+.course-facts dd {
+  font-size: .93rem;
+  overflow-wrap: anywhere;
+}
+
+.generic-media,
+.generic-figure,
+.teacher-generic {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: var(--wash);
+}
+
+.generic-media img,
+.generic-figure img,
+.teacher-generic img {
+  filter: saturate(.72);
+}
+
+.generic-media-label {
+  position: absolute;
+  left: .65rem;
+  bottom: .65rem;
+  max-width: calc(100% - 1.3rem);
+  padding: .24rem .42rem;
+  border-radius: 6px;
+  background: rgba(251, 250, 246, .92);
+  color: var(--green);
+  font-size: .76rem;
+  font-weight: 850;
+}
+
+.teacher-generic {
+  aspect-ratio: 4 / 3;
+}
+
+.teacher-generic picture,
+.teacher-generic img {
+  width: 100%;
+  height: 100%;
+}
+
+.teacher-generic img {
+  object-fit: cover;
+}
+
+.activity-aside .status-badges {
+  margin-bottom: 1rem;
+}
+
+.activity-links {
+  display: grid;
+  gap: 1rem;
+  border-top: 1px solid rgba(221, 216, 204, .72);
+}
+
+.activity-links h2 {
+  color: var(--green);
+  font-size: clamp(1.45rem, 3vw, 2rem);
+}
+
+.related-courses {
+  display: grid;
+  gap: .75rem;
+}
+
+.related-courses h3 {
+  color: var(--green);
+  font-size: 1.1rem;
+}
+
+.day-schedule {
+  display: grid;
+  gap: .65rem;
+}
+
+.day-schedule h3 {
+  margin-bottom: 0;
+}
+
+.schedule-entry {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: .65rem;
+  padding-top: .68rem;
+  border-top: 1px solid rgba(221, 216, 204, .82);
+}
+
+.schedule-entry time {
+  color: var(--clay);
+  font-weight: 850;
+}
+
+.schedule-entry a,
+.schedule-card p a,
+.planning-table td a {
+  color: var(--green);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.schedule-entry small {
+  display: block;
+  margin-top: .08rem;
+  color: var(--muted);
+}
+
+.schedule-entry .status-badges,
+.schedule-card .status-badges,
+.planning-table .status-badges {
+  margin-top: .42rem;
+}
+
+.schedule-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin-top: .5rem;
+}
+
+.schedule-actions a,
+.table-action {
+  display: inline-flex;
+  color: var(--green);
+  font-size: .86rem;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.table-action {
+  margin-top: .38rem;
+}
+
+.faq-section {
+  background: rgba(255, 255, 255, .3);
+  border-top: 1px solid rgba(221, 216, 204, .72);
+}
+
+@media (min-width: 980px) {
+  .activity-links {
+    grid-template-columns: .55fr .85fr .85fr;
+    align-items: start;
+  }
+}
+
+@media (max-width: 560px) {
+  .activity-actions .button,
+  .page-actions .button {
+    width: 100%;
+  }
+  .course-facts {
+    grid-template-columns: 1fr;
+  }
+  .schedule-entry {
+    grid-template-columns: 1fr;
+    gap: .15rem;
+  }
+  .status-badge {
+    font-size: .76rem;
+  }
+  .activity-links {
+    padding-block: 2.75rem;
+  }
+  .home-page {
+    padding-bottom: 0;
+  }
+  .home-page .mobile-cta {
+    display: none;
   }
 }
