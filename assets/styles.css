@@ -209,15 +209,45 @@ h3 { font-size: 1.25rem; }
 }
 .practice-copy h3 a { text-decoration: none; }
 .practice-copy p { margin: 0; color: var(--muted); }
-.card-link {
-  display: inline-flex;
+.card-actions,
+.teacher-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
   margin-top: auto;
   padding-top: .35rem;
+}
+.teacher-actions {
+  margin-top: .75rem;
+}
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: .42rem .66rem;
+  border: 1px solid rgba(49, 92, 69, .28);
+  border-radius: 6px;
+  background: #fff;
   color: var(--green);
-  font-weight: 800;
+  font-size: .9rem;
+  font-weight: 850;
+  line-height: 1.15;
   text-decoration: none;
 }
-.card-link::after { content: "→"; margin-left: .4rem; }
+.card-link:hover {
+  border-color: rgba(49, 92, 69, .48);
+  background: var(--wash);
+}
+.card-link-primary {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+}
+.card-link-primary:hover {
+  background: #284b39;
+  border-color: #284b39;
+}
 .text-cta {
   display: inline-flex;
   margin-top: .35rem;
@@ -375,10 +405,22 @@ details p { color: var(--muted); margin-bottom: 0; }
   font-weight: 850;
 }
 .instagram-topbar a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: .32rem .56rem;
+  border: 1px solid rgba(168, 79, 54, .28);
+  border-radius: 6px;
+  background: #fff;
   color: var(--clay);
   font-size: .92rem;
   font-weight: 800;
   text-decoration: none;
+}
+.button.instagram-button {
+  background: var(--clay);
+  border-color: var(--clay);
+  color: #fff;
 }
 .instagram-viewport {
   display: flex;
@@ -511,6 +553,11 @@ details p { color: var(--muted); margin-bottom: 0; }
   border-radius: 8px;
   padding: 1.15rem;
   box-shadow: var(--soft-shadow);
+}
+.contact-hint {
+  margin-top: -.45rem;
+  color: var(--muted);
+  font-size: .96rem;
 }
 .mobile-cta { display: none; }
 @media (min-width: 720px) {
@@ -960,7 +1007,7 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   }
 }
 
-/* UX action, badges and SEO content pass. */
+/* UX action and SEO content pass. */
 .activity-actions,
 .page-actions {
   display: flex;
@@ -968,50 +1015,6 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   gap: .7rem;
   align-items: center;
   margin-top: 1rem;
-}
-
-.status-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .35rem;
-  align-items: center;
-}
-
-.status-badge {
-  display: inline-flex;
-  align-items: center;
-  min-height: 24px;
-  padding: .22rem .48rem;
-  border: 1px solid rgba(221, 216, 204, .95);
-  border-radius: 6px;
-  background: #fbfaf6;
-  color: var(--muted);
-  font-size: .78rem;
-  font-weight: 800;
-  line-height: 1.1;
-}
-
-.badge-weekly,
-.badge-monthly {
-  color: var(--green);
-  background: var(--wash);
-  border-color: rgba(49, 92, 69, .2);
-}
-
-.badge-tbc {
-  color: var(--clay);
-  background: #fff7f0;
-  border-color: rgba(168, 79, 54, .22);
-}
-
-.badge-children {
-  color: var(--blue);
-  background: #eef6f5;
-  border-color: rgba(36, 106, 115, .22);
-}
-
-.badge-adults {
-  color: var(--green);
 }
 
 .course-facts {
@@ -1047,19 +1050,6 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   filter: saturate(.72);
 }
 
-.generic-media-label {
-  position: absolute;
-  left: .65rem;
-  bottom: .65rem;
-  max-width: calc(100% - 1.3rem);
-  padding: .24rem .42rem;
-  border-radius: 6px;
-  background: rgba(251, 250, 246, .92);
-  color: var(--green);
-  font-size: .76rem;
-  font-weight: 850;
-}
-
 .teacher-generic {
   aspect-ratio: 4 / 3;
 }
@@ -1072,10 +1062,6 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
 
 .teacher-generic img {
   object-fit: cover;
-}
-
-.activity-aside .status-badges {
-  margin-bottom: 1rem;
 }
 
 .activity-links {
@@ -1135,12 +1121,6 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   color: var(--muted);
 }
 
-.schedule-entry .status-badges,
-.schedule-card .status-badges,
-.planning-table .status-badges {
-  margin-top: .42rem;
-}
-
 .schedule-actions {
   display: flex;
   flex-wrap: wrap;
@@ -1151,10 +1131,24 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
 .schedule-actions a,
 .table-action {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: .34rem .55rem;
+  border: 1px solid rgba(49, 92, 69, .28);
+  border-radius: 6px;
+  background: #fff;
   color: var(--green);
   font-size: .86rem;
   font-weight: 850;
+  line-height: 1.15;
   text-decoration: none;
+}
+
+.schedule-actions a:last-child {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
 }
 
 .table-action {
@@ -1184,9 +1178,6 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   .schedule-entry {
     grid-template-columns: 1fr;
     gap: .15rem;
-  }
-  .status-badge {
-    font-size: .76rem;
   }
   .activity-links {
     padding-block: 2.75rem;
