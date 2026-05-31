@@ -1107,6 +1107,14 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   font-weight: 850;
 }
 
+.schedule-entry time:empty {
+  display: none;
+}
+
+.schedule-entry time:empty + div {
+  grid-column: 1 / -1;
+}
+
 .schedule-entry a,
 .schedule-card p a,
 .planning-table td a {
