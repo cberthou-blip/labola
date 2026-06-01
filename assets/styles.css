@@ -48,7 +48,7 @@ img { display: block; max-width: 100%; height: auto; }
   white-space: nowrap;
 }
 .site-menu {
-  display: flex;
+  display: none;
   align-items: center;
   padding: 0;
   border: 0;
@@ -58,6 +58,7 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .menu-button { display: none; }
 .site-nav { display: flex; gap: .2rem; overflow-x: auto; scrollbar-width: none; }
+.desktop-nav { display: flex; }
 .site-nav a {
   padding: .55rem .7rem;
   font-size: .9rem;
@@ -601,6 +602,7 @@ details p { color: var(--muted); margin-bottom: 0; }
   .brand-mark { width: 38px; height: 38px; }
   .site-header { flex-wrap: nowrap; align-items: center; gap: .65rem; padding-block: .55rem; }
   .site-menu {
+    display: flex;
     position: relative;
     margin-left: auto;
   }
@@ -641,10 +643,11 @@ details p { color: var(--muted); margin-bottom: 0; }
   .site-menu[open] .menu-icon { background: transparent; }
   .site-menu[open] .menu-icon::before { top: 0; transform: rotate(45deg); }
   .site-menu[open] .menu-icon::after { top: 0; transform: rotate(-45deg); }
-  .site-nav {
+  .desktop-nav,
+  .mobile-nav {
     display: none;
   }
-  .site-menu[open] .site-nav {
+  .site-menu[open] .mobile-nav {
     position: absolute;
     top: calc(100% + .55rem);
     right: 0;
@@ -921,7 +924,7 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
 
 .planning-preview div {
   display: grid;
-  grid-template-columns: minmax(6.5rem, .55fr) minmax(7rem, .55fr) minmax(0, 1.4fr);
+  grid-template-columns: minmax(6.5rem, .55fr) minmax(8.5rem, .6fr) minmax(0, 1.35fr);
   gap: .75rem;
   align-items: baseline;
   padding: .85rem 1rem;
@@ -1046,11 +1049,7 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
 @media (max-width: 560px) {
   .compact-intro { padding-block: 2rem; }
   .quick-strip {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .quick-strip a {
-    min-width: 0;
-    padding: .72rem .7rem;
+    grid-template-columns: 1fr;
   }
   .quick-strip span {
     font-size: .86rem;
@@ -1254,6 +1253,9 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   .activity-links {
     grid-template-columns: .55fr .85fr .85fr;
     align-items: start;
+  }
+  .activity-links > .local-links {
+    margin-top: calc(1.1rem * 1.05 + .75rem);
   }
 }
 
