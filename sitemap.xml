@@ -211,13 +211,23 @@
     </image:image>
   </url>
   <url>
+    <loc>https://labola-clisson.fr/cours/biodanza-marcos-aguirre/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://labola-clisson.fr/assets/images/biodanza-marcos-1000.webp</image:loc>
+      <image:title>Biodanza à Clisson</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://labola-clisson.fr/cours/yoga-catherine-boue/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://labola-clisson.fr/assets/images/catherine-yoga-1400.webp</image:loc>
-      <image:title>Yoga doux à Clisson</image:title>
+      <image:title>Yoga postural à Clisson</image:title>
     </image:image>
   </url>
   <url>

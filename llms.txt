@@ -6,7 +6,7 @@ La Bola est un espace d'activités sportives, culturelles, yoga, danse, méditat
 
 Contact La Bola : contact@labola-clisson.fr.
 
-Activités principales : flamenco avec La Juana, Afrovibes et danses d'Afrique de l'Ouest avec Ade Adekambi, danse intuitive avec Mélanie Fruchaud, danse conscience et méditation avec Anouk Saudemont, danse contemporaine et improvisation avec Meritxell Checa, compagnie senior Les Sauvages, tango argentin avec TangoSensible, théâtre enfants avec Sandrine Laverdure, Téhima avec Stéphanie Douillard, méditation et relaxation en mouvements avec Élise Suarez, cours collectifs de chant avec Lucie Gabrielle, yoga avec Catherine Boué, Karine Birot / Luna Sol et Carole-Alice Le Bomin.
+Activités principales : flamenco avec La Juana, Biodanza avec Marcos Aguirre, Afrovibes et danses d'Afrique de l'Ouest avec Ade Adekambi, danse intuitive avec Mélanie Fruchaud, danse conscience et méditation avec Anouk Saudemont, danse contemporaine et improvisation avec Meritxell Checa, compagnie senior Les Sauvages, tango argentin avec TangoSensible, théâtre enfants avec Sandrine Laverdure, Téhima avec Stéphanie Douillard, méditation et relaxation en mouvements avec Élise Suarez, cours collectifs de chant avec Lucie Gabrielle, yoga avec Catherine Boué, Karine Birot / Luna Sol et Carole-Alice Le Bomin.
 
 Public : grand public adulte, enfants selon les formats, débutants selon les pratiques, seniors selon les formats, personnes cherchant bien-être, danse, méditation, conscience corporelle, voix et pratiques douces à Clisson et dans le vignoble nantais.
 
@@ -23,6 +23,7 @@ Public : grand public adulte, enfants selon les formats, débutants selon les pr
 ## Activités
 
 - [Flamenco avec La Juana](https://labola-clisson.fr/cours/flamenco-la-juana/) : Un cours de flamenco pour explorer le rythme, l'ancrage, l'expressivité et la présence du corps. Horaires : Mercredi à 18h10.
+- [Biodanza avec Marcos Aguirre](https://labola-clisson.fr/cours/biodanza-marcos-aguirre/) : Une pratique hebdomadaire pour réveiller le corps, ouvrir le cœur et nourrir le lien. Horaires : Lundi 10h00, sur période scolaire. Tarif : séance découverte offerte · 330 € l'année.
 - [Afrovibes avec Ade Adekambi](https://labola-clisson.fr/cours/danse-afrovibes-ade-adekambi/) : Un cours sur des sonorités africaines actuelles, entre cardio, habileté motrice et renforcement. Horaires : Mercredi 19h45-21h15 · 15 septembre 2026 au 10 juin 2027.
 - [Danses d'Afrique de l'Ouest avec musiciens](https://labola-clisson.fr/cours/danses-africaines-traditionnelles-ade-adekambi/) : Un format avec musiciens et djembé pour apprendre les pas de base et danser au rythme des instruments. Horaires : séance de 1h30.
 - [Danse intuitive avec Mélanie Fruchaud](https://labola-clisson.fr/cours/danse-intuitive-melanie-fruchaud/) : Un espace guidé pour bouger librement, écouter ce qui traverse le corps et retrouver de la présence à soi. Horaires : Vendredis mensuels 19h45-21h45 · stages annuels de 7h.
@@ -36,7 +37,7 @@ Public : grand public adulte, enfants selon les formats, débutants selon les pr
 - [Méditation et relaxation en mouvements](https://labola-clisson.fr/cours/meditation-relaxation-mouvements-elise-suarez/) : Une pratique inspirée de pratiques chinoises, pour relier respiration, détente et mouvement doux. Tarif : prix libre.
 - [Cercle de méditation avec Anouk Saudemont](https://labola-clisson.fr/cours/cercle-meditation-anouk-saudemont/) : Un cercle mensuel pour entrer dans l'instant présent, préparer le corps par le Qi Gong et méditer en groupe. Horaires : Un samedi par mois 9h00-11h00.
 - [Cours collectifs de chant](https://labola-clisson.fr/cours/cours-collectifs-chant-lucie-gabrielle/) : Un format collectif pour explorer sa voix, progresser en technique vocale et chanter avec plaisir. Horaires : 2h, un samedi par mois · octobre à juin.
-- [Yoga doux avec Catherine Boué](https://labola-clisson.fr/cours/yoga-catherine-boue/) : Un yoga doux et précis pour délier le corps, retrouver de la tonicité et laisser plus de place au calme. Horaires : 32 séances de 1h entre septembre et juin 2026.
+- [Yoga postural avec Catherine Boué](https://labola-clisson.fr/cours/yoga-catherine-boue/) : Un yoga doux mais pas mou, pour gagner en souplesse et en tonicité tout en restant à l'écoute du corps. Horaires : Mardi 12h45-13h45.
 - [Yoga avec Karine Birot · Luna Sol](https://labola-clisson.fr/cours/yoga-karine-birot-luna-sol/) : Un yoga progressif, sensible et accessible, pour habiter son corps avec plus de confort et de présence. Horaires : Mardi et jeudi 18h00-19h30 · septembre à juin.
 - [Yoga avec Carole-Alice Le Bomin](https://labola-clisson.fr/cours/yoga-carole-alice-le-bomin/) : Des séances créatives et adaptées à tous, pour revenir à soi par les postures, la respiration et la relaxation. Horaires : Mercredi 9h00-10h15 · vendredi 18h00-19h30 · 33 séances.
 
