@@ -525,6 +525,49 @@ details p { color: var(--muted); margin-bottom: 0; }
 }
 .page-hero.compact h1 { max-width: 16ch; color: var(--green); }
 .page-hero p:last-child { max-width: 760px; color: var(--muted); font-size: 1.1rem; }
+.planning-page .page-hero {
+  padding-top: clamp(3rem, 6vw, 4.6rem);
+  padding-bottom: clamp(1.7rem, 4vw, 2.5rem);
+}
+.planning-page .planning-table {
+  padding-block: clamp(2.6rem, 5vw, 4.6rem);
+}
+.planning-page .planning-table .section-heading {
+  margin-bottom: 1rem;
+}
+.planning-page caption {
+  padding-block: .9rem;
+}
+.planning-page tbody tr:nth-child(3) > *,
+.planning-page tbody tr:nth-child(6) > *,
+.planning-page tbody tr:nth-child(12) > *,
+.planning-page tbody tr:nth-child(14) > *,
+.planning-page tbody tr:nth-child(17) > *,
+.planning-page tbody tr:nth-child(19) > *,
+.planning-page tbody tr:nth-child(20) > *,
+.planning-page tbody tr:nth-child(22) > * {
+  border-top-color: rgba(49, 92, 69, .24);
+}
+.planning-page .schedule-card {
+  gap: .38rem;
+}
+.planning-page .schedule-actions {
+  margin-top: .32rem;
+}
+.planning-page .schedule-actions a:last-child {
+  min-height: 30px;
+  padding: .3rem .5rem;
+  background: rgba(49, 92, 69, .08);
+  border-color: rgba(49, 92, 69, .24);
+  color: var(--green);
+  font-size: .82rem;
+}
+.planning-page .faq-section {
+  padding-block: clamp(2.6rem, 5vw, 4rem);
+}
+.planning-page .faq-list {
+  max-width: 760px;
+}
 .activity-hero {
   display: grid;
   gap: 1.5rem;
@@ -595,6 +638,19 @@ details p { color: var(--muted); margin-bottom: 0; }
   .activity-grid { grid-template-columns: 340px 1fr; }
   .activity-aside { position: sticky; top: 5.75rem; }
   .site-footer { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 900px) {
+  .planning-page .table-wrap {
+    display: none;
+  }
+  .planning-page .schedule-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .85rem;
+  }
+  .planning-page .schedule-card {
+    padding: .95rem;
+  }
 }
 @media (max-width: 560px) {
   :root { --edge: clamp(1rem, 5vw, 1.25rem); }
@@ -696,6 +752,17 @@ details p { color: var(--muted); margin-bottom: 0; }
   }
   .table-wrap { display: none; }
   .schedule-cards { display: grid; gap: .75rem; }
+  .planning-page .schedule-cards {
+    grid-template-columns: 1fr;
+    gap: .65rem;
+  }
+  .planning-page .page-hero {
+    padding-top: 2.8rem;
+    padding-bottom: 1.8rem;
+  }
+  .planning-page .planning-table {
+    padding-block: 2.35rem;
+  }
   .hero-actions .button, .contact-band .button { width: 100%; }
   .section-heading.with-action {
     display: grid;
