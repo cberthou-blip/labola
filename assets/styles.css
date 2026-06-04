@@ -472,28 +472,6 @@ details p { color: var(--muted); margin-bottom: 0; }
   transform: scale(1.36);
   transform-origin: top center;
 }
-.instagram-note {
-  margin: 0;
-  padding: .85rem 1rem 1rem;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: .95rem;
-}
-.social-update-note {
-  display: grid;
-  gap: .25rem;
-  margin-top: 1rem;
-  padding: .95rem;
-  border: 1px solid rgba(49, 92, 69, .2);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, .68);
-}
-.social-update-note strong {
-  color: var(--green);
-}
-.social-update-note span {
-  color: var(--muted);
-}
 .founders-section {
   background: rgba(255, 255, 255, .42);
   border-top: 1px solid rgba(221, 216, 204, .7);
