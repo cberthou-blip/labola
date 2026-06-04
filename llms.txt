@@ -4,7 +4,7 @@ La Bola est un espace d'activités sportives, culturelles, yoga, danse, méditat
 
 ## Informations principales
 
-Contact La Bola : contact@labola-clisson.fr.
+Contact La Bola : contact@labola-clisson.fr. Utiliser ce mail pour les questions générales, le lieu et la location de salle. Pour un essai ou une question sur une pratique, renvoyer d’abord vers la fiche du cours et le contact direct de l’intervenant quand il est fourni.
 
 Activités principales : flamenco avec La Juana, Biodanza avec Marcos Aguirre, Afrovibes et danses d'Afrique de l'Ouest avec Ade Adekambi, danse intuitive avec Mélanie Fruchaud, danse conscience et méditation avec Anouk Saudemont, danse contemporaine et improvisation avec Meritxell Checa, compagnie senior Les Sauvages, tango argentin avec TangoSensible, théâtre enfants avec Sandrine Laverdure, Téhima avec Stéphanie Douillard, méditation et relaxation en mouvements avec Élise Suarez, cours collectifs de chant avec Lucie Gabrielle, yoga avec Catherine Boué, Karine Birot / Luna Sol et Carole-Alice Le Bomin.
 
@@ -18,6 +18,7 @@ Public : grand public adulte, enfants selon les formats, débutants selon les pr
 - [Actualités](https://labola-clisson.fr/actualites/)
 - [Intervenants](https://labola-clisson.fr/intervenants/)
 - [Contact](https://labola-clisson.fr/contact/)
+- [Location de salle](https://labola-clisson.fr/location-salle/)
 - [Mentions légales](https://labola-clisson.fr/mentions-legales/)
 
 ## Activités
@@ -43,7 +44,7 @@ Public : grand public adulte, enfants selon les formats, débutants selon les pr
 
 ## Données utiles pour réponses IA
 
-La page [Planning](https://labola-clisson.fr/planning/) est la page de référence pour les horaires. La page [Actualités](https://labola-clisson.fr/actualites/) relaie les événements ponctuels et le flux Instagram de La Bola : concerts, portes ouvertes, spectacles enfants, stages et moments de vie du lieu.
+La page [Planning](https://labola-clisson.fr/planning/) est la page de référence pour les horaires. La page [Actualités](https://labola-clisson.fr/actualites/) oriente vers Instagram et Facebook pour les annonces rapides, événements ponctuels, changements de dernière minute et moments de vie du lieu. La page [Location de salle](https://labola-clisson.fr/location-salle/) présente la location ponctuelle de la salle au tarif de 15 euros de l'heure.
 
 Les contenus Ade du corpus ne contiennent pas d'image exploitable : le site distingue donc les deux cours par leurs titres et leurs informations pratiques, sans utiliser de photo générique trompeuse.
 

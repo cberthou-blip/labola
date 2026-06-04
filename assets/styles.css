@@ -467,6 +467,21 @@ details p { color: var(--muted); margin-bottom: 0; }
   color: var(--muted);
   font-size: .95rem;
 }
+.social-update-note {
+  display: grid;
+  gap: .25rem;
+  margin-top: 1rem;
+  padding: .95rem;
+  border: 1px solid rgba(49, 92, 69, .2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .68);
+}
+.social-update-note strong {
+  color: var(--green);
+}
+.social-update-note span {
+  color: var(--muted);
+}
 .founders-section {
   background: rgba(255, 255, 255, .42);
   border-top: 1px solid rgba(221, 216, 204, .7);
@@ -595,6 +610,21 @@ details p { color: var(--muted); margin-bottom: 0; }
 .activity-gallery > div { display: grid; gap: 1rem; }
 .activity-gallery figure { margin: 0; border-radius: 8px; overflow: hidden; box-shadow: var(--soft-shadow); }
 .activity-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.elise-gallery {
+  background: rgba(255, 255, 255, .3);
+  border-top: 1px solid rgba(221, 216, 204, .72);
+  border-bottom: 1px solid rgba(221, 216, 204, .72);
+}
+.elise-gallery > div:first-child {
+  max-width: 760px;
+}
+.elise-gallery > div:first-child p:last-child {
+  color: var(--muted);
+}
+.elise-gallery img {
+  aspect-ratio: 20 / 9;
+  object-fit: cover;
+}
 .activity-faq { padding: 0 var(--edge) clamp(3rem, 7vw, 5rem); }
 .teacher-list { display: grid; gap: 1rem; }
 .teacher-row {
@@ -621,11 +651,23 @@ details p { color: var(--muted); margin-bottom: 0; }
   color: var(--muted);
   font-size: .96rem;
 }
+.rental-layout {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+}
+.rental-aside a {
+  color: var(--green);
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
 .mobile-cta { display: none; }
 @media (min-width: 720px) {
   .quick-strip { grid-template-columns: repeat(3, 1fr); }
   .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .activity-gallery > div { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .elise-gallery > div:first-child { grid-template-columns: 1fr; }
+  .elise-gallery > div:last-child { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .teacher-row { grid-template-columns: minmax(220px, .35fr) 1fr; }
 }
 @media (min-width: 980px) {
@@ -636,6 +678,7 @@ details p { color: var(--muted); margin-bottom: 0; }
   .practice-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .activity-hero { grid-template-columns: .9fr .75fr; }
   .activity-grid { grid-template-columns: 340px 1fr; }
+  .rental-layout { grid-template-columns: 340px 1fr; }
   .activity-aside { position: sticky; top: 5.75rem; }
   .site-footer { grid-template-columns: 1fr 1fr; }
 }
