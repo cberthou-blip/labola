@@ -265,15 +265,6 @@ h3 { font-size: 1.25rem; }
   border-color: rgba(49, 92, 69, .48);
   background: var(--wash);
 }
-.card-link-primary {
-  background: var(--green);
-  border-color: var(--green);
-  color: #fff;
-}
-.card-link-primary:hover {
-  background: #284b39;
-  border-color: #284b39;
-}
 .text-cta {
   display: inline-flex;
   margin-top: .35rem;
@@ -408,70 +399,6 @@ details p { color: var(--muted); margin-bottom: 0; }
   color: var(--muted);
   font-size: 1.08rem;
 }
-.instagram-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .75rem;
-  align-items: center;
-  margin-top: 1.25rem;
-}
-.instagram-module {
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: var(--soft-shadow);
-}
-.instagram-topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: .85rem 1rem;
-  border-bottom: 1px solid var(--line);
-  background: #fbfaf6;
-}
-.instagram-topbar span {
-  color: var(--green);
-  font-weight: 850;
-}
-.instagram-topbar a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 32px;
-  padding: .32rem .56rem;
-  border: 1px solid rgba(168, 79, 54, .28);
-  border-radius: 6px;
-  background: #fff;
-  color: var(--clay);
-  font-size: .92rem;
-  font-weight: 800;
-  text-decoration: none;
-}
-.button.instagram-button {
-  background: var(--clay);
-  border-color: var(--clay);
-  color: #fff;
-}
-.instagram-viewport {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: min(58vh, 560px);
-  min-height: 500px;
-  padding: 1.25rem;
-  overflow: hidden;
-  background: #fff;
-}
-.instagram-frame {
-  width: 390px;
-  height: 360px;
-  min-height: 360px;
-  border: 0;
-  background: #fff;
-  transform: scale(1.36);
-  transform-origin: top center;
-}
 .founders-section {
   background: rgba(255, 255, 255, .42);
   border-top: 1px solid rgba(221, 216, 204, .7);
@@ -481,8 +408,7 @@ details p { color: var(--muted); margin-bottom: 0; }
   gap: clamp(1.25rem, 4vw, 3rem);
   align-items: start;
 }
-.founder-photo,
-.press-clipping {
+.founder-photo {
   margin: 0;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -498,14 +424,6 @@ details p { color: var(--muted); margin-bottom: 0; }
 .founders-copy {
   display: grid;
   gap: 1rem;
-}
-.press-clipping {
-  max-width: 420px;
-  padding: .55rem;
-}
-.press-clipping img {
-  width: 100%;
-  border-radius: 4px;
 }
 .site-footer {
   display: grid;
@@ -555,17 +473,6 @@ details p { color: var(--muted); margin-bottom: 0; }
 }
 .planning-page .schedule-card {
   gap: .38rem;
-}
-.planning-page .schedule-actions {
-  margin-top: .32rem;
-}
-.planning-page .schedule-actions a:last-child {
-  min-height: 30px;
-  padding: .3rem .5rem;
-  background: rgba(49, 92, 69, .08);
-  border-color: rgba(49, 92, 69, .24);
-  color: var(--green);
-  font-size: .82rem;
 }
 .planning-page .faq-section {
   padding-block: clamp(2.6rem, 5vw, 4rem);
@@ -768,21 +675,6 @@ details p { color: var(--muted); margin-bottom: 0; }
   .activity-hero p { font-size: 1rem; }
   .activity-hero img { aspect-ratio: 5 / 4; }
   .practice-media { min-height: 210px; }
-  .instagram-actions .button { width: 100%; }
-  .instagram-topbar { padding-inline: .85rem; }
-  .instagram-viewport {
-    height: 62vh;
-    min-height: 420px;
-    padding: .75rem;
-    overflow: auto;
-  }
-  .instagram-frame {
-    width: 100%;
-    min-width: 300px;
-    height: 420px;
-    min-height: 420px;
-    transform: none;
-  }
   .table-wrap { display: none; }
   .schedule-cards { display: grid; gap: .75rem; }
   .planning-page .schedule-cards {
@@ -830,7 +722,6 @@ details p { color: var(--muted); margin-bottom: 0; }
   }
 }
 
-/* LP refinement pass: lighter hierarchy, clearer course scanning, non-misleading placeholders. */
 h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
 
 .compact-intro { padding-block: clamp(2rem, 5vw, 4.2rem); }
@@ -898,15 +789,9 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   font-size: clamp(1.12rem, 2vw, 1.35rem);
 }
 
-.course-group-heading span,
-.course-group-note {
+.course-group-heading span {
   color: var(--muted);
   font-size: .94rem;
-}
-
-.course-group-note {
-  max-width: 760px;
-  margin: -.2rem 0 1rem;
 }
 
 .compact-grid { gap: .95rem; }
@@ -923,93 +808,6 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
 
 .course-card .mini-facts div {
   padding-top: .56rem;
-}
-
-.course-placeholder {
-  position: relative;
-  display: grid;
-  place-content: center;
-  gap: .45rem;
-  width: 100%;
-  height: 100%;
-  min-height: 210px;
-  padding: 1.1rem;
-  border: 1px solid rgba(49, 92, 69, .18);
-  background:
-    repeating-linear-gradient(135deg, rgba(49, 92, 69, .07) 0 1px, transparent 1px 12px),
-    #eef3ea;
-  color: var(--green);
-  text-align: center;
-}
-
-.course-placeholder.visual-pending::before {
-  content: "Image non fournie";
-  position: absolute;
-  top: .8rem;
-  left: .8rem;
-  color: var(--clay);
-  font-size: .72rem;
-  font-weight: 850;
-  text-transform: uppercase;
-}
-
-.course-placeholder span {
-  max-width: 16ch;
-  justify-self: center;
-  font-size: 1.18rem;
-  font-weight: 850;
-  line-height: 1.18;
-}
-
-.course-placeholder small {
-  color: var(--muted);
-  font-size: .88rem;
-  font-weight: 750;
-}
-
-.activity-placeholder-figure {
-  margin: 0;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  box-shadow: var(--shadow);
-}
-
-.activity-placeholder-figure .course-placeholder {
-  min-height: 320px;
-  aspect-ratio: 4 / 3;
-}
-
-.teacher-placeholder { aspect-ratio: 4 / 3; }
-
-.inline-cta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: clamp(2rem, 5vw, 3.5rem);
-  padding: 1.25rem;
-  border: 1px solid rgba(49, 92, 69, .22);
-  border-radius: 8px;
-  background: #202c27;
-  color: #fff;
-}
-
-.inline-cta h2 {
-  color: #fff;
-  font-size: 1.35rem;
-}
-
-.inline-cta p {
-  margin: .3rem 0 0;
-  color: rgba(255,255,255,.74);
-}
-
-.inline-cta .button.primary {
-  flex: 0 0 auto;
-  background: #fff;
-  color: var(--ink);
-  border-color: #fff;
 }
 
 .planning-lite {
@@ -1048,49 +846,6 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   color: var(--muted);
 }
 
-.planning-overview {
-  background: rgba(255, 255, 255, .36);
-  border-bottom: 1px solid rgba(221, 216, 204, .7);
-}
-
-.day-schedule-grid {
-  display: grid;
-  gap: .85rem;
-}
-
-.day-schedule {
-  padding: 1rem;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 1px 0 rgba(24, 23, 22, .04);
-}
-
-.day-schedule h3 {
-  margin-bottom: .5rem;
-  color: var(--green);
-  font-size: 1.05rem;
-}
-
-.day-schedule p {
-  display: grid;
-  grid-template-columns: 7.4rem 1fr;
-  gap: .2rem .65rem;
-  margin: 0;
-  padding: .56rem 0;
-  border-top: 1px solid rgba(221, 216, 204, .82);
-}
-
-.day-schedule time {
-  color: var(--clay);
-  font-weight: 850;
-}
-
-.day-schedule small {
-  grid-column: 2;
-  color: var(--muted);
-}
-
 .faq-press-grid {
   display: grid;
   gap: 1rem;
@@ -1108,37 +863,7 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   gap: clamp(1rem, 3vw, 2.2rem);
 }
 
-.press-clipping.small {
-  max-width: 260px;
-}
-
-.press-cta {
-  display: grid;
-  gap: .28rem;
-  max-width: 430px;
-  padding: 1rem;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #fff;
-  text-decoration: none;
-  box-shadow: 0 1px 0 rgba(24, 23, 22, .04);
-}
-
-.press-cta strong {
-  color: var(--green);
-}
-
-.press-cta span {
-  color: var(--muted);
-}
-
-.press-cta:hover {
-  border-color: rgba(49, 92, 69, .35);
-  box-shadow: var(--soft-shadow);
-}
-
 @media (min-width: 720px) {
-  .day-schedule-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .faq-press-grid { grid-template-columns: minmax(0, 1fr) minmax(280px, .75fr); }
 }
 
@@ -1166,20 +891,10 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
     line-height: 1.2;
     text-align: center;
   }
-  .inline-cta {
-    display: grid;
-    align-items: start;
-  }
-  .inline-cta .button { width: 100%; }
   .planning-preview div {
     grid-template-columns: 1fr;
     gap: .12rem;
   }
-  .day-schedule p {
-    grid-template-columns: 1fr;
-    gap: .1rem;
-  }
-  .day-schedule small { grid-column: 1; }
   .home-page {
     padding-bottom: 4.1rem;
   }
@@ -1216,8 +931,6 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   overflow-wrap: anywhere;
 }
 
-.generic-media,
-.generic-figure,
 .teacher-generic {
   position: relative;
   display: block;
@@ -1225,8 +938,6 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   background: var(--wash);
 }
 
-.generic-media img,
-.generic-figure img,
 .teacher-generic img {
   filter: saturate(.72);
 }
@@ -1271,82 +982,11 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   scroll-margin-top: 5.5rem;
 }
 
-.day-schedule {
-  display: grid;
-  gap: .65rem;
-}
-
-.day-schedule h3 {
-  margin-bottom: 0;
-}
-
-.schedule-entry {
-  display: grid;
-  grid-template-columns: 7rem 1fr;
-  gap: .65rem;
-  padding-top: .68rem;
-  border-top: 1px solid rgba(221, 216, 204, .82);
-}
-
-.schedule-entry time {
-  color: var(--clay);
-  font-weight: 850;
-}
-
-.schedule-entry time:empty {
-  display: none;
-}
-
-.schedule-entry time:empty + div {
-  grid-column: 1 / -1;
-}
-
-.schedule-entry a,
 .schedule-card p a,
 .planning-table td a {
   color: var(--green);
   font-weight: 850;
   text-decoration: none;
-}
-
-.schedule-entry small {
-  display: block;
-  margin-top: .08rem;
-  color: var(--muted);
-}
-
-.schedule-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .45rem;
-  margin-top: .5rem;
-}
-
-.schedule-actions a,
-.table-action {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 32px;
-  padding: .34rem .55rem;
-  border: 1px solid rgba(49, 92, 69, .28);
-  border-radius: 6px;
-  background: #fff;
-  color: var(--green);
-  font-size: .86rem;
-  font-weight: 850;
-  line-height: 1.15;
-  text-decoration: none;
-}
-
-.schedule-actions a:last-child {
-  background: var(--green);
-  border-color: var(--green);
-  color: #fff;
-}
-
-.table-action {
-  margin-top: .38rem;
 }
 
 .faq-section {
@@ -1371,10 +1011,6 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   }
   .course-facts {
     grid-template-columns: 1fr;
-  }
-  .schedule-entry {
-    grid-template-columns: 1fr;
-    gap: .15rem;
   }
   .activity-links {
     padding-block: 2.75rem;
