@@ -131,9 +131,16 @@ h3 { font-size: 1.25rem; }
   padding: .72rem 1rem;
   border-radius: 6px;
   border: 1px solid currentColor;
+  cursor: pointer;
+  font: inherit;
   font-weight: 750;
   text-decoration: none;
   transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease;
+}
+.button:disabled {
+  cursor: default;
+  opacity: .82;
+  transform: none;
 }
 .button:hover { transform: translateY(-1px); box-shadow: var(--soft-shadow); }
 .button.primary { background: var(--green); color: #fff; border-color: var(--green); }
@@ -360,6 +367,11 @@ details p { color: var(--muted); margin-bottom: 0; }
 .contact-actions { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; }
 .contact-band .button.primary { background: #fff; color: var(--ink); border-color: #fff; }
 .contact-band .button.secondary { color: #fff; border-color: rgba(255,255,255,.72); background: transparent; }
+.copy-email-status {
+  color: rgba(255,255,255,.78);
+  font-weight: 750;
+  min-height: 1.2em;
+}
 .conversion-panel {
   display: grid;
   gap: 1rem;
@@ -1259,6 +1271,7 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   display: grid;
   gap: 1rem;
   border-top: 1px solid rgba(221, 216, 204, .72);
+  scroll-margin-top: 5.5rem;
 }
 
 .activity-links h2 {
@@ -1274,6 +1287,10 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
 .related-courses h3 {
   color: var(--green);
   font-size: 1.1rem;
+}
+
+#demande-location {
+  scroll-margin-top: 5.5rem;
 }
 
 .day-schedule {

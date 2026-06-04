@@ -42,7 +42,7 @@
     <h1>Louer la salle La Bola à Clisson</h1>
     <p>Un espace simple, clair et chaleureux pour accueillir une pratique, une répétition, un atelier ou un temps de travail en petit groupe.</p>
     <div class="page-actions">
-      <a class="button primary" href="mailto:contact@labola-clisson.fr?subject=Demande%20de%20location%20de%20la%20salle%20La%20Bola">Demander une disponibilité</a>
+      <a class="button primary" href="#demande-location">Demander une disponibilité</a>
       <a class="button secondary" href="/contact/">Voir les informations pratiques</a>
     </div>
   </section>
@@ -70,21 +70,23 @@
       <h2>Ce qui convient bien</h2>
     </div>
     <div class="local-links">
-      <a href="mailto:contact@labola-clisson.fr?subject=Demande%20de%20location%20de%20la%20salle%20La%20Bola"><strong>Atelier ponctuel</strong><span>Un créneau court pour un groupe, une initiation ou une pratique guidée.</span></a>
-      <a href="mailto:contact@labola-clisson.fr?subject=Demande%20de%20location%20de%20la%20salle%20La%20Bola"><strong>Répétition ou pratique</strong><span>Un temps de travail dans un espace dégagé, calme et lumineux.</span></a>
-      <a href="mailto:contact@labola-clisson.fr?subject=Demande%20de%20location%20de%20la%20salle%20La%20Bola"><strong>Question générale</strong><span>Un doute sur la disponibilité, le format ou l'adéquation de votre proposition.</span></a>
+      <a href="#demande-location"><strong>Atelier ponctuel</strong><span>Un créneau court pour un groupe, une initiation ou une pratique guidée.</span></a>
+      <a href="#demande-location"><strong>Répétition ou pratique</strong><span>Un temps de travail dans un espace dégagé, calme et lumineux.</span></a>
+      <a href="#demande-location"><strong>Question générale</strong><span>Un doute sur la disponibilité, le format ou l'adéquation de votre proposition.</span></a>
     </div>
   </section>
 
-  <section class="section contact-band">
+  <section class="section contact-band" id="demande-location">
     <div>
       <p class="eyebrow">Demande de location</p>
       <h2>Écrire à La Bola pour la salle</h2>
-      <p>Pour une location ou une question générale sur le lieu, utilisez l'adresse de La Bola. Pour un cours d'essai, passez plutôt par la fiche du cours ou de l'intervenant.</p>
+      <p>Pour une location ou une question générale sur le lieu, utilisez l'adresse <a href="mailto:contact@labola-clisson.fr?subject=Demande%20de%20location%20de%20la%20salle%20La%20Bola">contact@labola-clisson.fr</a>. Pour un cours d'essai, passez plutôt par la fiche du cours ou de l'intervenant.</p>
     </div>
     <div class="contact-actions">
-      <a class="button primary" href="mailto:contact@labola-clisson.fr?subject=Demande%20de%20location%20de%20la%20salle%20La%20Bola">Demander une disponibilité</a>
+      <button class="button primary copy-email-button" type="button" data-copy-email="contact@labola-clisson.fr">Voir l'adresse email</button>
+      <a class="button secondary" href="mailto:contact@labola-clisson.fr?subject=Demande%20de%20location%20de%20la%20salle%20La%20Bola">Ouvrir un email</a>
       <a class="button secondary" href="/cours/">Choisir un cours</a>
+      <span class="copy-email-status" aria-live="polite"></span>
     </div>
   </section>
 </main>
@@ -102,5 +104,6 @@
   </div>
 </footer>
 <a class="mobile-cta" href="/cours/">Choisir un cours</a>
+<script src="/assets/copy-email.js" defer></script>
 </body>
 </html>

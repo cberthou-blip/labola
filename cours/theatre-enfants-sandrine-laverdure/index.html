@@ -43,7 +43,7 @@
         <h1>Cours de théâtre enfants à Clisson</h1>
         <p>Des ateliers de théâtre pour enfants organisés par âge, avec trois créneaux le mercredi après-midi.</p>
         <div class="activity-actions">
-          <a class="button primary" href="mailto:contact@labola-clisson.fr?subject=Demande%20de%20cours%20d%27essai%20-%20Th%C3%A9%C3%A2tre%20enfants%20%C3%A0%20La%20Bola">&Eacute;crire &agrave; La Bola</a>
+          <a class="button primary" href="#contact-intervenant">&Eacute;crire &agrave; La Bola</a>
           <a class="button secondary" href="/planning/">Voir le planning</a>
         </div>
       </div>
@@ -65,7 +65,7 @@
 
 <section class="section activity-gallery"><h2>Photos de la pratique</h2><div><figure><picture><source srcset="/assets/images/theatre-enfants-grands-480.webp 480w, /assets/images/theatre-enfants-grands-720.webp 720w, /assets/images/theatre-enfants-grands-1400.webp 1400w" sizes="(min-width: 900px) 28vw, 100vw" type="image/webp"><img class="image-theatre-enfants-grands" src="/assets/images/theatre-enfants-grands-1400.webp" alt="Groupe d&#x27;enfants en atelier théâtre à La Bola Clisson" width="1020" height="574" loading="lazy" decoding="async"></picture></figure><figure><picture><source srcset="/assets/images/theatre-enfants-grands-2-480.webp 480w, /assets/images/theatre-enfants-grands-2-720.webp 720w, /assets/images/theatre-enfants-grands-2-1400.webp 1400w" sizes="(min-width: 900px) 28vw, 100vw" type="image/webp"><img class="image-theatre-enfants-grands-2" src="/assets/images/theatre-enfants-grands-2-1400.webp" alt="Pratique théâtrale enfants et adolescents à La Bola Clisson" width="1020" height="574" loading="lazy" decoding="async"></picture></figure></div></section>
 
-    <section class="section activity-links">
+    <section class="section activity-links" id="contact-intervenant">
       <div>
         <p class="eyebrow">Continuer</p>
         <h2>Explorer autour de ce cours</h2>
@@ -73,7 +73,7 @@
       <div class="local-links">
         <a href="/planning/"><strong>Planning</strong><span>Voir les créneaux et formats ponctuels.</span></a>
         <a href="/cours/"><strong>Tous les cours</strong><span>Comparer les pratiques proposées à La Bola.</span></a>
-        <a href="/contact/"><strong>Contact</strong><span>Écrire à La Bola pour une question ou une inscription.</span></a>
+        <a href="mailto:contact@labola-clisson.fr?subject=Demande%20de%20cours%20d%27essai%20-%20Th%C3%A9%C3%A2tre%20enfants%20%C3%A0%20La%20Bola"><strong>Contact La Bola</strong><span>contact@labola-clisson.fr</span></a>
       </div>
       <div class="related-courses">
         <h3>Cours proches</h3>
@@ -86,10 +86,13 @@
         <p class="eyebrow">Inscription et renseignements</p>
         <h2>Prêt à pratiquer ?</h2>
         <p>Demandez un cours d'essai pour Théâtre enfants. Le message est prérempli avec le nom du cours afin de faciliter l'inscription.</p>
+        <p class="contact-email-line"><strong>Email :</strong> <a href="mailto:contact@labola-clisson.fr?subject=Demande%20de%20cours%20d%27essai%20-%20Th%C3%A9%C3%A2tre%20enfants%20%C3%A0%20La%20Bola">contact@labola-clisson.fr</a></p>
       </div>
       <div class="contact-actions">
-        <a class="button primary" href="mailto:contact@labola-clisson.fr?subject=Demande%20de%20cours%20d%27essai%20-%20Th%C3%A9%C3%A2tre%20enfants%20%C3%A0%20La%20Bola">&Eacute;crire &agrave; La Bola</a>
+        <button class="button primary copy-email-button" type="button" data-copy-email="contact@labola-clisson.fr">Voir l'adresse email</button>
+        <a class="button secondary" href="mailto:contact@labola-clisson.fr?subject=Demande%20de%20cours%20d%27essai%20-%20Th%C3%A9%C3%A2tre%20enfants%20%C3%A0%20La%20Bola">Ouvrir un email</a>
         <a class="button secondary" href="/planning/">Voir le planning</a>
+        <span class="copy-email-status" aria-live="polite"></span>
       </div>
     </section>
   </article>
@@ -108,5 +111,6 @@
   </div>
 </footer>
 <a class="mobile-cta" href="/cours/">Choisir un cours</a>
+<script src="/assets/copy-email.js" defer></script>
 </body>
 </html>
