@@ -226,6 +226,11 @@ h3 { font-size: 1.25rem; }
   background: #fff;
   padding: .35rem;
 }
+.image-menopause-ateliers {
+  object-fit: contain !important;
+  object-position: center;
+  background: #fff;
+}
 .image-elise-relaxation-mouvements { object-position: center 36%; }
 .practice-copy {
   display: flex;
@@ -461,14 +466,14 @@ details p { color: var(--muted); margin-bottom: 0; }
 .planning-page caption {
   padding-block: .9rem;
 }
-.planning-page tbody tr:nth-child(3) > *,
-.planning-page tbody tr:nth-child(6) > *,
-.planning-page tbody tr:nth-child(12) > *,
-.planning-page tbody tr:nth-child(14) > *,
-.planning-page tbody tr:nth-child(17) > *,
-.planning-page tbody tr:nth-child(19) > *,
+.planning-page tbody tr:nth-child(4) > *,
+.planning-page tbody tr:nth-child(7) > *,
+.planning-page tbody tr:nth-child(13) > *,
+.planning-page tbody tr:nth-child(15) > *,
+.planning-page tbody tr:nth-child(18) > *,
 .planning-page tbody tr:nth-child(20) > *,
-.planning-page tbody tr:nth-child(22) > * {
+.planning-page tbody tr:nth-child(21) > *,
+.planning-page tbody tr:nth-child(23) > * {
   border-top-color: rgba(49, 92, 69, .24);
 }
 .planning-page .schedule-card {
