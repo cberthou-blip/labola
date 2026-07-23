@@ -22,7 +22,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://labola-clisson.fr/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://labola-clisson.fr/contact/"}]}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Peut-on faire un cours d'essai ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Ouvrez la fiche du cours qui vous intéresse : le contact direct de l'intervenant y est indiqué quand il est disponible."}},{"@type":"Question","name":"Où se situe La Bola à Clisson ?","acceptedAnswer":{"@type":"Answer","text":"La Bola se situe au 7 rue des Ajoncs, 44190 Clisson, en Loire-Atlantique."}},{"@type":"Question","name":"Les cours sont-ils ouverts aux débutants ?","acceptedAnswer":{"@type":"Answer","text":"Plusieurs cours accueillent les débutants. Le niveau conseillé est indiqué sur chaque fiche cours."}},{"@type":"Question","name":"Quand utiliser l'email général de La Bola ?","acceptedAnswer":{"@type":"Answer","text":"Pour une question sur le lieu, la location de la salle ou une demande générale qui ne concerne pas une pratique précise."}}]}</script>
 </head>
-<body class="inner-page">
+<body class="inner-page contact-page">
 
 <header class="site-header">
   <a class="brand" href="/" aria-label="La Bola Clisson">
@@ -41,15 +41,17 @@
   <section class="page-hero compact">
     <p class="eyebrow">Contact La Bola</p>
     <h1>Contacter La Bola à Clisson</h1>
-    <p>Pour un cours ou un essai, partez de la fiche de la pratique afin de contacter le bon intervenant. Pour la salle ou une question générale, La Bola reste votre point d’entrée.</p>
+    <p>Retrouvez le bon contact selon votre demande : cours, essai, accès au lieu ou location de salle.</p>
   </section>
   <section class="section contact-layout">
     <div class="rich-text">
       <h2>Informations pratiques</h2>
       <p><strong>Adresse :</strong> 7 rue des Ajoncs, 44190 Clisson.</p>
       <p><strong>Email général :</strong> <a href="mailto:contact@labola-clisson.fr">contact@labola-clisson.fr</a></p>
-      <p class="contact-hint">Pour une question liée à un cours, passez d'abord par la fiche du cours : le contact de l'intervenant y est indiqué quand il est disponible.</p>
-      <p>Utilisez l'email général pour une question sur le lieu, la location de la salle ou une demande qui ne concerne pas une pratique précise.</p>
+      <div class="contact-routes" aria-label="Choisir le bon contact">
+        <div><strong>Pour un cours ou un essai</strong><span>Consultez la fiche de la pratique : le contact de l'intervenant y est indiqué lorsqu'il est disponible.</span></div>
+        <div><strong>Pour le lieu ou la location de salle</strong><span>Utilisez l'email général pour toute demande qui ne concerne pas une pratique précise.</span></div>
+      </div>
       <div class="social-row" aria-label="Suivre La Bola">
         <a class="text-cta" href="https://www.facebook.com/labolaclisson/" target="_blank" rel="noopener noreferrer">Facebook</a>
         <a class="text-cta" href="https://www.instagram.com/la_bola_clisson/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -57,19 +59,21 @@
     </div>
     <div class="conversion-panel">
       <h2>Essayer une pratique</h2>
-      <p>Choisissez d'abord le cours qui vous intéresse : chaque fiche rassemble l'intervenant, les informations pratiques et le bon bouton de contact.</p>
+      <p>Les fiches cours réunissent la présentation de la pratique, les informations utiles et le contact de l'intervenant lorsqu'il est disponible.</p>
       <a class="button primary" href="/cours/">Voir les cours et contacts</a>
       <a class="button secondary" href="/planning/">Voir le planning</a>
     </div>
-    <div class="map-link">
-      <h2>Venir à La Bola</h2>
-      <p>Le lieu se situe dans la zone des Ajoncs à Clisson, en Loire-Atlantique.</p>
-      <a class="text-cta" href="https://www.google.com/maps/dir/?api=1&amp;destination=La%20Bola%207%20rue%20des%20Ajoncs%2044190%20Clisson" target="_blank" rel="noopener noreferrer">Ouvrir l'itinéraire</a>
-    </div>
-    <div class="map-link">
-      <h2>Location de salle</h2>
-      <p>Pour louer ponctuellement la salle, une page dédiée rassemble le tarif, l'esprit du lieu et le contact adapté.</p>
-      <a class="text-cta" href="/location-salle/">Voir la page location</a>
+    <div class="contact-secondary-links">
+      <div class="map-link">
+        <h2>Venir à La Bola</h2>
+        <p>Le lieu se situe dans la zone des Ajoncs à Clisson, en Loire-Atlantique.</p>
+        <a class="text-cta" href="https://www.google.com/maps/dir/?api=1&amp;destination=La%20Bola%207%20rue%20des%20Ajoncs%2044190%20Clisson" target="_blank" rel="noopener noreferrer">Ouvrir l'itinéraire</a>
+      </div>
+      <div class="map-link">
+        <h2>Location de salle</h2>
+        <p>Pour louer ponctuellement la salle, une page dédiée rassemble le tarif, l'esprit du lieu et le contact adapté.</p>
+        <a class="text-cta" href="/location-salle/">Voir la page location</a>
+      </div>
     </div>
   </section>
   <section class="section faq-section">
@@ -77,7 +81,7 @@
       <p class="eyebrow">FAQ</p>
       <h2>Questions fréquentes</h2>
     </div>
-    <div class="faq-list"><details><summary>Peut-on faire un cours d&#x27;essai ?</summary><p>Oui. Ouvrez la fiche du cours qui vous intéresse : le contact direct de l'intervenant y est indiqué quand il est disponible.</p></details><details><summary>Où se situe La Bola à Clisson ?</summary><p>La Bola se situe au 7 rue des Ajoncs, 44190 Clisson, en Loire-Atlantique.</p></details><details><summary>Les cours sont-ils ouverts aux débutants ?</summary><p>Plusieurs cours accueillent les débutants. Le niveau conseillé est indiqué sur chaque fiche cours.</p></details><details><summary>Quand utiliser l'email général de La Bola ?</summary><p>Pour une question sur le lieu, la location de la salle ou une demande générale qui ne concerne pas une pratique précise.</p></details></div>
+    <div class="faq-list"><details><summary>Peut-on faire un cours d&#x27;essai&nbsp;?</summary><p>Oui. Ouvrez la fiche du cours qui vous intéresse : le contact direct de l'intervenant y est indiqué quand il est disponible.</p></details><details><summary>Où se situe La Bola à Clisson&nbsp;?</summary><p>La Bola se situe au 7 rue des Ajoncs, 44190 Clisson, en Loire-Atlantique.</p></details><details><summary>Les cours sont-ils ouverts aux débutants&nbsp;?</summary><p>Plusieurs cours accueillent les débutants. Le niveau conseillé est indiqué sur chaque fiche cours.</p></details><details><summary>Quand utiliser l'email général de La Bola&nbsp;?</summary><p>Pour une question sur le lieu, la location de la salle ou une demande générale qui ne concerne pas une pratique précise.</p></details></div>
   </section>
 </main>
 
