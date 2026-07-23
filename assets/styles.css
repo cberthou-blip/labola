@@ -1028,3 +1028,84 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
     display: none;
   }
 }
+
+/* Homepage pacing: keep desktop, tablet and mobile adjustments isolated. */
+@media (min-width: 720px) {
+  .home-page .courses-overview .local-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 980px) {
+  .home-page .section {
+    padding-block: clamp(2.75rem, 5.6vw, 5rem);
+  }
+
+  .home-page .compact-intro {
+    padding-block: clamp(1.75rem, 3.5vw, 3.2rem);
+  }
+
+  .home-page .compact-founders {
+    padding-block: clamp(2.25rem, 4.5vw, 3.75rem);
+  }
+}
+
+@media (max-width: 560px) {
+  .home-page .section {
+    padding-block: 2.2rem;
+  }
+
+  .home-page .compact-intro {
+    padding-block: 2rem;
+  }
+
+  .home-page .quick-strip {
+    gap: 0;
+    background: rgba(255, 255, 255, .92);
+  }
+
+  .home-page .quick-strip div {
+    display: grid;
+    grid-template-columns: minmax(5rem, .42fr) minmax(0, 1fr);
+    gap: .75rem;
+    align-items: start;
+    padding: .72rem 0;
+    border-bottom: 1px solid var(--line);
+    background: transparent;
+  }
+
+  .home-page .quick-strip div:last-child {
+    border-bottom: 0;
+  }
+
+  .home-page .quick-strip strong {
+    font-size: .86rem;
+  }
+
+  .home-page .planning-preview {
+    gap: .45rem;
+  }
+
+  .home-page .planning-preview div {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "day time"
+      "activities activities";
+    gap: .2rem .75rem;
+    padding: .72rem .8rem;
+  }
+
+  .home-page .planning-preview strong {
+    grid-area: day;
+  }
+
+  .home-page .planning-preview span {
+    grid-area: time;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .home-page .planning-preview p {
+    grid-area: activities;
+  }
+}
