@@ -31,10 +31,10 @@
     button.disabled = true;
     try {
       await copyText(email);
-      button.textContent = 'Adresse copiee';
+      button.textContent = 'Adresse copi\u00e9e';
       if (status) status.textContent = email;
     } catch {
-      button.textContent = 'Adresse affichee';
+      button.textContent = 'Adresse affich\u00e9e';
       if (status) status.textContent = `Adresse : ${email}`;
     } finally {
       window.setTimeout(() => {

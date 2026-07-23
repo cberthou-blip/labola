@@ -1201,3 +1201,101 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
     line-height: 1.35;
   }
 }
+
+/* Rental page pacing and conversion path. */
+.rental-page #reperes-pratiques,
+.rental-page #demande-location {
+  scroll-margin-top: 5.5rem;
+}
+
+.rental-page .page-hero > p {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.rental-page .rental-layout {
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.rental-page .rental-layout .rich-text h2:first-child {
+  margin-top: 0;
+}
+
+.rental-page .rental-suitable {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.rental-page .rental-suitable-list {
+  display: grid;
+  gap: .75rem;
+}
+
+.rental-page .rental-suitable-list > div {
+  display: grid;
+  gap: .25rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(24, 23, 22, .04);
+}
+
+.rental-page .rental-suitable-list strong {
+  color: var(--green);
+}
+
+.rental-page .rental-suitable-list span {
+  color: var(--muted);
+}
+
+@media (min-width: 980px) {
+  .rental-page .page-hero {
+    padding-top: clamp(3.2rem, 6.75vw, 4.8rem);
+    padding-bottom: clamp(1.7rem, 3.75vw, 2.55rem);
+  }
+
+  .rental-page .section {
+    padding-block: clamp(2.25rem, 5.6vw, 5rem);
+  }
+
+  .rental-page .rental-layout {
+    grid-template-columns: 320px minmax(0, 1fr);
+  }
+
+  .rental-page .rental-aside {
+    position: static;
+  }
+
+  .rental-page .rental-suitable-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .rental-page .page-hero {
+    padding-top: 2.8rem;
+    padding-bottom: 1.85rem;
+  }
+
+  .rental-page .page-hero > p {
+    font-size: 1rem;
+  }
+
+  .rental-page .section {
+    padding-block: 2.2rem;
+  }
+
+  .rental-page .rental-suitable {
+    gap: 1.1rem;
+  }
+
+  .rental-page .rental-suitable-list {
+    gap: .55rem;
+  }
+
+  .rental-page .rental-suitable-list > div {
+    padding: .85rem;
+  }
+}

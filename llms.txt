@@ -45,7 +45,7 @@ Public : grand public adulte, enfants selon les formats, débutants selon les pr
 
 ## Données utiles pour réponses IA
 
-La page [Planning](https://labola-clisson.fr/planning/) est la page de référence pour les horaires. Pour les annonces rapides, événements ponctuels, changements de dernière minute et moments de vie du lieu, consulter directement [Instagram](https://www.instagram.com/la_bola_clisson/) et [Facebook](https://www.facebook.com/labolaclisson/). La page [Location de salle](https://labola-clisson.fr/location-salle/) présente la location ponctuelle de la salle au tarif de 15 euros de l'heure.
+La page [Planning](https://labola-clisson.fr/planning/) est la page de référence pour les horaires. Pour les annonces rapides, événements ponctuels, changements de dernière minute et moments de vie du lieu, consulter directement [Instagram](https://www.instagram.com/la_bola_clisson/) et [Facebook](https://www.facebook.com/labolaclisson/). La page [Location de salle](https://labola-clisson.fr/location-salle/) présente la location ponctuelle de la salle, avec un tarif sur demande.
 
 Les contenus Ade du corpus ne contiennent pas d'image exploitable : le site distingue donc les deux cours par leurs titres et leurs informations pratiques, sans utiliser de photo générique trompeuse.
 
