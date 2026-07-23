@@ -61,16 +61,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://labola-clisson.fr/actualites/</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://labola-clisson.fr/assets/images/hero-1400.webp</image:loc>
-      <image:title>Actualités et événements La Bola Clisson</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://labola-clisson.fr/mentions-legales/</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>yearly</changefreq>

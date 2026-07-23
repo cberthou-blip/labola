@@ -387,24 +387,6 @@ details p { color: var(--muted); margin-bottom: 0; }
   gap: .55rem;
 }
 .social-row .button { width: auto; }
-.instagram-section {
-  background: rgba(255, 255, 255, .42);
-  border-block: 1px solid rgba(221, 216, 204, .7);
-}
-.instagram-layout {
-  display: grid;
-  gap: clamp(1.5rem, 5vw, 4rem);
-  align-items: start;
-  max-width: 1180px;
-  margin-inline: auto;
-}
-.instagram-copy {
-  max-width: 560px;
-}
-.instagram-copy p:not(.eyebrow) {
-  color: var(--muted);
-  font-size: 1.08rem;
-}
 .founders-section {
   background: rgba(255, 255, 255, .42);
   border-top: 1px solid rgba(221, 216, 204, .7);
@@ -440,6 +422,31 @@ details p { color: var(--muted); margin-bottom: 0; }
 }
 .site-footer strong { color: #fff; }
 .site-footer a { color: #fff; }
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin: .75rem 0 1.1rem;
+}
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: .45rem .7rem;
+  border: 1px solid rgba(255, 255, 255, .3);
+  border-radius: 6px;
+  color: #fff;
+  font-size: .88rem;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+}
+.footer-social a:hover,
+.footer-social a:focus-visible {
+  border-color: rgba(255, 255, 255, .62);
+  background: rgba(255, 255, 255, .08);
+}
 .site-footer .footer-credit {
   color: rgba(255,255,255,.56);
   font-size: .88rem;
@@ -576,7 +583,6 @@ details p { color: var(--muted); margin-bottom: 0; }
 @media (min-width: 980px) {
   .header-cta { display: inline-flex; }
   .intro-grid, .split-panel, .local-seo, .contact-layout { grid-template-columns: .75fr 1.25fr; }
-  .instagram-layout { grid-template-columns: minmax(280px, .55fr) minmax(540px, 1fr); }
   .founders-layout { grid-template-columns: .95fr .8fr; }
   .practice-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .activity-hero { grid-template-columns: .9fr .75fr; }
@@ -718,6 +724,9 @@ details p { color: var(--muted); margin-bottom: 0; }
     box-shadow: var(--shadow);
   }
   .home-page {
+    padding-bottom: 0;
+  }
+  .inner-page {
     padding-bottom: 0;
   }
   .home-page .mobile-cta {
@@ -1162,10 +1171,6 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
 }
 
 @media (max-width: 560px) {
-  .contact-page {
-    padding-bottom: 0;
-  }
-
   .contact-page .page-hero {
     padding-top: 2.75rem;
     padding-bottom: 1.8rem;
