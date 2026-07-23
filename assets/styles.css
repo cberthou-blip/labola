@@ -214,6 +214,7 @@ h3 { font-size: 1.25rem; }
 .image-danse-intuitive { object-position: center 18%; }
 .image-anouk-meditation { object-position: center 18%; }
 .image-anouk-danse-conscience { object-position: center 42%; }
+.image-caroline-choregraphie { object-fit: contain !important; background: #080706; }
 .image-chant {
   object-fit: contain !important;
   object-position: center;
@@ -469,11 +470,11 @@ details p { color: var(--muted); margin-bottom: 0; }
 .planning-page tbody tr:nth-child(4) > *,
 .planning-page tbody tr:nth-child(7) > *,
 .planning-page tbody tr:nth-child(13) > *,
-.planning-page tbody tr:nth-child(15) > *,
-.planning-page tbody tr:nth-child(18) > *,
-.planning-page tbody tr:nth-child(20) > *,
+.planning-page tbody tr:nth-child(16) > *,
+.planning-page tbody tr:nth-child(19) > *,
 .planning-page tbody tr:nth-child(21) > *,
-.planning-page tbody tr:nth-child(23) > * {
+.planning-page tbody tr:nth-child(22) > *,
+.planning-page tbody tr:nth-child(24) > * {
   border-top-color: rgba(49, 92, 69, .24);
 }
 .planning-page .schedule-card {
