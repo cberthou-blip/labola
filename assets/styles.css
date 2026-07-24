@@ -474,18 +474,89 @@ details p { color: var(--muted); margin-bottom: 0; }
 .planning-page caption {
   padding-block: .9rem;
 }
-.planning-page tbody tr:nth-child(4) > *,
-.planning-page tbody tr:nth-child(7) > *,
-.planning-page tbody tr:nth-child(13) > *,
-.planning-page tbody tr:nth-child(16) > *,
-.planning-page tbody tr:nth-child(19) > *,
-.planning-page tbody tr:nth-child(21) > *,
-.planning-page tbody tr:nth-child(22) > *,
-.planning-page tbody tr:nth-child(24) > * {
-  border-top-color: rgba(49, 92, 69, .24);
+.planning-page tbody .day-start > * {
+  border-top: 2px solid rgba(49, 92, 69, .24);
 }
-.planning-page .schedule-card {
-  gap: .38rem;
+.planning-page .schedule-note {
+  display: block;
+  margin-top: .18rem;
+  color: var(--muted);
+  font-size: .82rem;
+  font-weight: 600;
+}
+.schedule-jump,
+.schedule-groups {
+  display: none;
+}
+.planning-page .periodic-schedule {
+  margin-top: clamp(2rem, 4vw, 3.2rem);
+  scroll-margin-top: 5.5rem;
+}
+.planning-page .periodic-heading {
+  max-width: 680px;
+  margin-bottom: 1rem;
+}
+.planning-page .periodic-heading h3 {
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+}
+.planning-page .periodic-heading p {
+  margin: .45rem 0 0;
+  color: var(--muted);
+}
+.planning-page .periodic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .75rem;
+}
+.planning-page .periodic-card {
+  position: relative;
+  display: grid;
+  gap: .42rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(24, 23, 22, .04);
+}
+.planning-page .periodic-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .75rem;
+  color: var(--green);
+  font-size: .9rem;
+}
+.planning-page .periodic-meta strong {
+  color: var(--clay);
+}
+.planning-page .periodic-card h4,
+.planning-page .periodic-card p {
+  margin: 0;
+}
+.planning-page .periodic-card h4 {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+.planning-page .periodic-card h4 a {
+  color: var(--green);
+  text-decoration: none;
+}
+.planning-page .periodic-card h4 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+.planning-page .periodic-card p {
+  color: var(--muted);
+  font-size: .94rem;
+}
+.planning-page .periodic-card:focus-within {
+  outline: 2px solid rgba(49, 92, 69, .5);
+  outline-offset: 2px;
+}
+.planning-page .periodic-card:hover {
+  border-color: rgba(49, 92, 69, .35);
+  box-shadow: var(--soft-shadow);
 }
 .planning-page .faq-section {
   padding-block: clamp(2.6rem, 5vw, 4rem);
@@ -595,13 +666,92 @@ details p { color: var(--muted); margin-bottom: 0; }
   .planning-page .table-wrap {
     display: none;
   }
-  .planning-page .schedule-cards {
+  .planning-page .schedule-jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    margin-bottom: 1.5rem;
+  }
+  .planning-page .schedule-jump a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: .48rem .7rem;
+    border: 1px solid rgba(49, 92, 69, .26);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, .72);
+    color: var(--green);
+    font-size: .88rem;
+    font-weight: 800;
+    text-decoration: none;
+  }
+  .planning-page .schedule-jump a:hover,
+  .planning-page .schedule-jump a:focus-visible {
+    border-color: rgba(49, 92, 69, .5);
+    background: var(--wash);
+  }
+  .planning-page .schedule-groups {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: .85rem;
+    gap: 1.4rem 1rem;
+  }
+  .planning-page .schedule-day {
+    min-width: 0;
+    scroll-margin-top: 5.5rem;
+  }
+  .planning-page .schedule-day h3 {
+    margin-bottom: .55rem;
+    color: var(--green);
+    font-size: 1.15rem;
+  }
+  .planning-page .schedule-day-list {
+    display: grid;
+    gap: .48rem;
   }
   .planning-page .schedule-card {
-    padding: .95rem;
+    position: relative;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "practice time"
+      "teacher teacher";
+    gap: .28rem .75rem;
+    align-items: start;
+    padding: .85rem .9rem;
+  }
+  .planning-page .schedule-card .schedule-time {
+    grid-area: time;
+    white-space: nowrap;
+  }
+  .planning-page .schedule-card p {
+    grid-area: practice;
+    min-width: 0;
+  }
+  .planning-page .schedule-card p a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+  .planning-page .schedule-card small {
+    grid-area: teacher;
+  }
+  .planning-page .schedule-card:focus-within {
+    outline: 2px solid rgba(49, 92, 69, .5);
+    outline-offset: 2px;
+  }
+  .planning-page .schedule-card:hover {
+    border-color: rgba(49, 92, 69, .35);
+  }
+}
+@media (min-width: 901px) {
+  .planning-page .table-wrap {
+    overflow: visible;
+  }
+  .planning-page thead th {
+    position: sticky;
+    top: 65px;
+    z-index: 3;
+    box-shadow: 0 1px 0 rgba(49, 92, 69, .18);
   }
 }
 @media (max-width: 560px) {
@@ -689,9 +839,9 @@ details p { color: var(--muted); margin-bottom: 0; }
   .practice-media { min-height: 210px; }
   .table-wrap { display: none; }
   .schedule-cards { display: grid; gap: .75rem; }
-  .planning-page .schedule-cards {
+  .planning-page .schedule-groups {
     grid-template-columns: 1fr;
-    gap: .65rem;
+    gap: 1.25rem;
   }
   .planning-page .page-hero {
     padding-top: 2.8rem;
@@ -699,6 +849,10 @@ details p { color: var(--muted); margin-bottom: 0; }
   }
   .planning-page .planning-table {
     padding-block: 2.35rem;
+  }
+  .planning-page .periodic-grid {
+    grid-template-columns: 1fr;
+    gap: .48rem;
   }
   .hero-actions .button, .contact-band .button { width: 100%; }
   .section-heading.with-action {
