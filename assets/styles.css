@@ -1942,3 +1942,22 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
     padding-top: .15rem;
   }
 }
+
+/* Legal page: tighter entry and comfortable reading width. */
+.legal-page .legal-content {
+  padding-top: clamp(2rem, 5.3vw, 4.75rem);
+}
+
+.legal-page .legal-copy {
+  max-width: 76ch;
+}
+
+.legal-page .legal-copy h2:first-child {
+  margin-top: 1.5rem;
+}
+
+.legal-page .legal-address {
+  margin: 0 0 1rem;
+  color: inherit;
+  font-style: normal;
+}
