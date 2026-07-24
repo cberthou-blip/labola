@@ -1608,3 +1608,119 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
     grid-template-columns: 1fr;
   }
 }
+
+/* Intervenants directory pacing and card density. */
+.teachers-page .teacher-row > div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.teachers-page .teacher-row > div > p {
+  margin: .45rem 0 0;
+  color: var(--muted);
+}
+
+.teachers-page .teacher-actions {
+  margin-top: .65rem;
+  padding: .25rem 0 0;
+}
+
+@media (min-width: 980px) {
+  .teachers-page .page-hero {
+    padding-top: clamp(2.8rem, 5.6vw, 4.1rem);
+    padding-bottom: clamp(1.2rem, 2.4vw, 1.7rem);
+  }
+
+  .teachers-page .teacher-list {
+    padding-top: clamp(1.8rem, 4vw, 3rem);
+    padding-bottom: clamp(2.4rem, 5vw, 4.2rem);
+  }
+}
+
+@media (min-width: 1180px) {
+  .teachers-page .teacher-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .85rem;
+  }
+
+  .teachers-page .teacher-row {
+    grid-template-columns: minmax(180px, .72fr) minmax(0, 1.28fr);
+    min-height: 220px;
+    gap: 0;
+    align-items: stretch;
+  }
+
+  .teachers-page .teacher-row > picture,
+  .teachers-page .teacher-row > .teacher-generic,
+  .teachers-page .teacher-row > img {
+    display: block;
+    width: 100%;
+    min-height: 220px;
+    height: 100%;
+    aspect-ratio: auto;
+    overflow: hidden;
+    background: var(--wash);
+  }
+
+  .teachers-page .teacher-row > picture img,
+  .teachers-page .teacher-row > .teacher-generic img,
+  .teachers-page .teacher-row > img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+
+  .teachers-page .teacher-row > div {
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .teachers-page .teacher-row h2 {
+    font-size: clamp(1.35rem, 1.8vw, 1.75rem);
+  }
+}
+
+@media (max-width: 560px) {
+  .teachers-page .page-hero {
+    padding-top: 3.05rem;
+    padding-bottom: 2rem;
+  }
+
+  .teachers-page .teacher-list {
+    gap: .75rem;
+    padding-top: 2.35rem;
+    padding-bottom: 2.35rem;
+  }
+
+  .teachers-page .teacher-row > picture,
+  .teachers-page .teacher-row > .teacher-generic,
+  .teachers-page .teacher-row > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: var(--wash);
+  }
+
+  .teachers-page .teacher-row > picture img,
+  .teachers-page .teacher-row > .teacher-generic img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+
+  .teachers-page .teacher-row > div {
+    padding: .85rem;
+  }
+
+  .teachers-page .teacher-actions {
+    gap: .4rem;
+    margin-top: .5rem;
+    padding-top: .15rem;
+  }
+}
