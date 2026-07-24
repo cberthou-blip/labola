@@ -25,6 +25,11 @@
     grid.hidden = !expanded;
   };
 
+  const setContextualFilter = (visible) => {
+    if (!filter) return;
+    filter.hidden = mobileViewport.matches && !visible;
+  };
+
   const updateScrollHint = () => {
     if (!filter) return;
 
@@ -93,11 +98,13 @@
     if (mobileViewport.matches) {
       groups.forEach((group) => setExpanded(group, mobileState.get(group.id)));
       const expandedGroup = groups.find((group) => mobileState.get(group.id));
+      setContextualFilter(Boolean(expandedGroup));
       setActiveFamily(expandedGroup || null, Boolean(expandedGroup));
       window.requestAnimationFrame(updateScrollHint);
       return;
     }
 
+    setContextualFilter(true);
     groups.forEach((group) => setExpanded(group, true));
     requestDesktopSync();
     window.requestAnimationFrame(updateScrollHint);
@@ -113,13 +120,15 @@
       if (!mobileViewport.matches) return;
 
       const expanded = button.getAttribute('aria-expanded') !== 'true';
-      mobileState.set(group.id, expanded);
-      setExpanded(group, expanded);
       if (expanded) {
+        openOnly(group);
+        setContextualFilter(true);
         setActiveFamily(group, true);
       } else {
-        const expandedGroup = groups.find((candidate) => mobileState.get(candidate.id));
-        setActiveFamily(expandedGroup || null, Boolean(expandedGroup));
+        mobileState.set(group.id, false);
+        setExpanded(group, false);
+        setContextualFilter(false);
+        setActiveFamily(null);
       }
     });
   });

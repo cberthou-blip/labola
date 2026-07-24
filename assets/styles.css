@@ -1327,6 +1327,10 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   scrollbar-width: none;
 }
 
+.courses-page .course-filter[hidden] {
+  display: none;
+}
+
 .courses-page .course-filter::-webkit-scrollbar {
   display: none;
 }
@@ -1385,8 +1389,8 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
 
 @media (min-width: 980px) {
   .courses-page .page-hero {
-    padding-top: clamp(3.2rem, 6.75vw, 4.8rem);
-    padding-bottom: clamp(1.45rem, 3vw, 2.1rem);
+    padding-top: clamp(2.8rem, 5.6vw, 4.1rem);
+    padding-bottom: clamp(1.2rem, 2.4vw, 1.7rem);
   }
 
   .courses-page .section {
@@ -1394,7 +1398,12 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   }
 
   .courses-page .courses-section {
-    padding-top: clamp(1.9rem, 4vw, 3rem);
+    padding-top: clamp(1.6rem, 3.2vw, 2.5rem);
+    padding-bottom: clamp(1.75rem, 3.5vw, 2.8rem);
+  }
+
+  .courses-page .faq-section {
+    padding-top: clamp(1.75rem, 3.5vw, 2.8rem);
   }
 
   .courses-page .course-groups {
@@ -1454,8 +1463,8 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
 
 @media (max-width: 560px) {
   .courses-page .page-hero {
-    padding-top: 2.8rem;
-    padding-bottom: 1.55rem;
+    padding-top: 2.4rem;
+    padding-bottom: 1.25rem;
   }
 
   .courses-page .section {
@@ -1463,11 +1472,12 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   }
 
   .courses-page .courses-section {
-    padding-top: 1.7rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.6rem;
   }
 
   .courses-page .section-heading {
-    margin-bottom: 1.15rem;
+    margin-bottom: 1rem;
   }
 
   .courses-page .course-filter {
@@ -1575,7 +1585,7 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   }
 
   .courses-page .faq-section {
-    padding-top: 1.8rem;
+    padding-top: 1.4rem;
   }
 
   .courses-page .faq-list {
