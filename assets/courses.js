@@ -10,7 +10,7 @@
   if (!groups.length) return;
 
   const groupFromHash = () => groups.find((group) => `#${group.id}` === window.location.hash);
-  const initialGroup = groupFromHash();
+  const initialGroup = groupFromHash() || groups[0];
   const mobileState = new Map(
     groups.map((group) => [group.id, group === initialGroup])
   );

@@ -1545,6 +1545,25 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   scrollbar-width: none;
 }
 
+.courses-page .courses-overview {
+  margin: .25rem 0 1rem;
+  padding: 1.05rem 0 1.2rem;
+  border-block: 1px solid rgba(221, 216, 204, .72);
+}
+
+.courses-page .courses-overview .rich-text h2 {
+  margin-top: 0;
+  font-size: clamp(1.35rem, 2.6vw, 1.8rem);
+}
+
+.courses-page .courses-overview .local-links {
+  gap: .55rem;
+}
+
+.courses-page .courses-overview .local-links a {
+  padding: .78rem .9rem;
+}
+
 .courses-page .course-filter[hidden] {
   display: none;
 }
@@ -1696,6 +1715,30 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
 
   .courses-page .section-heading {
     margin-bottom: 1rem;
+  }
+
+  .courses-page .courses-overview {
+    display: block;
+    margin: .3rem 0 .9rem;
+    padding: 0 0 .95rem;
+    border-top: 0;
+  }
+
+  .courses-page .courses-overview .rich-text h2 {
+    margin-bottom: .45rem;
+    font-size: 1.28rem;
+    line-height: 1.15;
+  }
+
+  .courses-page .courses-overview .rich-text p {
+    margin-bottom: 0;
+    font-size: .98rem;
+    line-height: 1.55;
+  }
+
+  .courses-page .courses-overview .rich-text p + p,
+  .courses-page .courses-overview .local-links {
+    display: none;
   }
 
   .courses-page .course-filter {
