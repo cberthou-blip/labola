@@ -1399,11 +1399,11 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
 
   .courses-page .courses-section {
     padding-top: clamp(1.6rem, 3.2vw, 2.5rem);
-    padding-bottom: clamp(1.75rem, 3.5vw, 2.8rem);
+    padding-bottom: clamp(1.5rem, 3vw, 2.4rem);
   }
 
   .courses-page .faq-section {
-    padding-top: clamp(1.75rem, 3.5vw, 2.8rem);
+    padding-top: clamp(1.5rem, 3vw, 2.4rem);
   }
 
   .courses-page .course-groups {
@@ -1463,8 +1463,8 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
 
 @media (max-width: 560px) {
   .courses-page .page-hero {
-    padding-top: 2.4rem;
-    padding-bottom: 1.25rem;
+    padding-top: 2.1rem;
+    padding-bottom: 1.1rem;
   }
 
   .courses-page .section {
@@ -1472,7 +1472,7 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   }
 
   .courses-page .courses-section {
-    padding-top: 1.4rem;
+    padding-top: 1.2rem;
     padding-bottom: 1.6rem;
   }
 
