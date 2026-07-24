@@ -1024,6 +1024,12 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
   align-content: start;
 }
 
+.press-links small {
+  color: var(--green);
+  font-size: .82rem;
+  font-weight: 800;
+}
+
 .compact-founders {
   padding-block: clamp(2.75rem, 6vw, 5rem);
 }
@@ -1227,7 +1233,8 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
     background: rgba(255, 255, 255, .92);
   }
 
-  .home-page .quick-strip div {
+  .home-page .quick-strip > div,
+  .home-page .quick-strip > a {
     display: grid;
     grid-template-columns: minmax(5rem, .42fr) minmax(0, 1fr);
     gap: .75rem;
@@ -1237,7 +1244,7 @@ h2 { font-size: clamp(1.55rem, 3.6vw, 2.65rem); }
     background: transparent;
   }
 
-  .home-page .quick-strip div:last-child {
+  .home-page .quick-strip > :last-child {
     border-bottom: 0;
   }
 
