@@ -115,7 +115,7 @@ jobs:
             if (failed) process.exit(1);
           })();
           JS
-          node /tmp/check-responsive.js
+          NODE_PATH="$PWD/node_modules" node /tmp/check-responsive.js
 
       - name: Publier les captures de contrôle
         if: always()
