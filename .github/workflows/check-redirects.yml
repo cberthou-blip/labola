@@ -1,0 +1,26 @@
+name: Verification temporaire redirections
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tester les variantes du domaine
+        shell: bash
+        run: |
+          set -e
+          for url in \
+            http://labola-clisson.fr/ \
+            https://labola-clisson.fr/ \
+            http://www.labola-clisson.fr/ \
+            https://www.labola-clisson.fr/
+          do
+            echo "===== $url ====="
+            curl -sS -o /dev/null -D - --max-time 20 "$url" | grep -Ei '^(HTTP/|location:|server:)' || true
+          done
