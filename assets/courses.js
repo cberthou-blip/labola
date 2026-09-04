@@ -2,6 +2,68 @@
   const page = document.querySelector('.courses-page');
   if (!page) return;
 
+  // Ajustements de rentrée : conserver la structure existante de la page
+  // tout en retirant les contenus obsolètes et en appliquant les nouveaux créneaux.
+  page.querySelector('.course-filter a[href="#famille-theatre"]')?.remove();
+  page.querySelector('#famille-theatre')?.remove();
+
+  const meditationCardLink = page.querySelector('a[href="/cours/meditation-relaxation-mouvements-elise-suarez/"]');
+  const meditationCard = meditationCardLink?.closest('.course-card');
+  meditationCard?.querySelectorAll('.course-facts > div').forEach((fact) => {
+    const label = fact.querySelector('dt')?.textContent?.trim();
+    const value = fact.querySelector('dd');
+    if (!value) return;
+    if (label === 'Jour') value.textContent = 'Vendredi';
+    if (label === 'Horaire') value.textContent = '9h30-10h45';
+  });
+
+  const tangoCardLink = page.querySelector('a[href="/cours/tango-argentin-tangosensible/"]');
+  const tangoCard = tangoCardLink?.closest('.course-card');
+  const tangoPicture = tangoCard?.querySelector('picture');
+  const tangoSource = tangoPicture?.querySelector('source');
+  const tangoImage = tangoPicture?.querySelector('img');
+  if (tangoSource) {
+    tangoSource.srcset = '/assets/images/tango-presentation.webp';
+    tangoSource.removeAttribute('sizes');
+  }
+  if (tangoImage) {
+    tangoImage.src = '/assets/images/tango-presentation.webp';
+    tangoImage.alt = 'Présentation du cours de tango argentin TangoSensible à La Bola à Clisson';
+    tangoImage.removeAttribute('width');
+    tangoImage.removeAttribute('height');
+  }
+
+  const description = 'Cours de yoga, danse, méditation et chant à Clisson : horaires, niveaux, intervenants, tarifs et contacts pour essayer une pratique à La Bola.';
+  const metaDescription = document.querySelector('meta[name="description"]');
+  const ogDescription = document.querySelector('meta[property="og:description"]');
+  if (metaDescription) metaDescription.content = description;
+  if (ogDescription) ogDescription.content = description;
+
+  document.querySelectorAll('script[type="application/ld+json"]').forEach((script) => {
+    try {
+      const data = JSON.parse(script.textContent);
+
+      if (Array.isArray(data['@type']) && data['@type'].includes('LocalBusiness')) {
+        if (typeof data.description === 'string') {
+          data.description = data.description.replace('théâtre, ', '');
+        }
+        if (Array.isArray(data.knowsAbout)) {
+          data.knowsAbout = data.knowsAbout.filter((item) => item !== 'théâtre enfants');
+        }
+        script.textContent = JSON.stringify(data);
+      }
+
+      if (data['@type'] === 'ItemList' && Array.isArray(data.itemListElement)) {
+        data.itemListElement = data.itemListElement
+          .filter((item) => !String(item.url || '').includes('/theatre-enfants-'))
+          .map((item, index) => ({ ...item, position: index + 1 }));
+        script.textContent = JSON.stringify(data);
+      }
+    } catch (_) {
+      // Laisser intact un bloc JSON-LD qui ne serait pas parsable.
+    }
+  });
+
   const mobileViewport = window.matchMedia('(max-width: 560px)');
   const groups = [...page.querySelectorAll('.course-group')];
   const familyLinks = [...page.querySelectorAll('.course-filter a[href^="#famille-"]')];
