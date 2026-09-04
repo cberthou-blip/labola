@@ -2,8 +2,8 @@
    Aucun style global du site n'est modifié ici. */
 
 .seo-hub-page .page-hero {
-  padding-top: clamp(3.1rem, 6vw, 4.6rem);
-  padding-bottom: clamp(2.2rem, 4vw, 3rem);
+  padding-top: clamp(2.8rem, 5.6vw, 4.1rem);
+  padding-bottom: clamp(1.2rem, 2.4vw, 1.7rem);
 }
 
 .seo-hub-page .page-hero h1 {
@@ -18,7 +18,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: .65rem;
-  margin-top: 1.15rem;
+  margin-top: .9rem;
+}
+
+/* Le lien vers la section du catalogue duplique le parcours principal.
+   On conserve uniquement le planning comme accès rapide sur ces hubs. */
+.seo-hub-hero-actions .button:first-child {
+  display: none;
 }
 
 .seo-hub-hero-actions .button {
@@ -27,7 +33,7 @@
 }
 
 .seo-hub-list {
-  padding-block: clamp(2.5rem, 5vw, 4.5rem);
+  padding-block: clamp(2.25rem, 4.3vw, 3.8rem);
 }
 
 .seo-hub-list .section-heading {
@@ -87,7 +93,7 @@
 }
 
 .seo-hub-context {
-  padding-block: clamp(2.5rem, 5vw, 4.2rem);
+  padding-block: clamp(2.25rem, 4.3vw, 3.6rem);
   border-top: 1px solid rgba(221, 216, 204, .7);
   background: rgba(255, 255, 255, .26);
 }
@@ -101,7 +107,7 @@
 }
 
 .seo-hub-context .rich-text h2 {
-  margin-top: 1.55rem;
+  margin-top: 1.7rem;
   font-size: clamp(1.45rem, 2.7vw, 2rem);
 }
 
@@ -129,7 +135,7 @@
 }
 
 .seo-hub-cta {
-  padding-block: clamp(2.35rem, 4.5vw, 3.7rem);
+  padding-block: clamp(2.1rem, 4vw, 3.1rem);
 }
 
 .seo-hub-cta h2 {
@@ -164,8 +170,8 @@
 
 @media (max-width: 639px) {
   .seo-hub-page .page-hero {
-    padding-top: 2.6rem;
-    padding-bottom: 2rem;
+    padding-top: 2.1rem;
+    padding-bottom: 1.35rem;
   }
 
   .seo-hub-page .page-hero h1 {
@@ -180,7 +186,7 @@
   .seo-hub-hero-actions {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 1rem;
+    margin-top: .85rem;
   }
 
   .seo-hub-hero-actions .button {
@@ -190,7 +196,7 @@
 
   .seo-hub-list,
   .seo-hub-context {
-    padding-block: 2.2rem;
+    padding-block: 2rem;
   }
 
   .seo-hub-list .section-heading {
@@ -223,15 +229,15 @@
   }
 
   .seo-hub-context {
-    gap: 1.45rem;
+    gap: 1.25rem;
   }
 
   .seo-hub-context .rich-text h2 {
-    margin-top: 1.3rem;
+    margin-top: 1.6rem;
   }
 
   .seo-hub-cta {
-    padding-block: 2.2rem;
+    padding-block: 1.9rem;
   }
 
   .seo-hub-cta .contact-actions {
@@ -246,7 +252,7 @@
   grid-template-columns: minmax(0, 1fr);
   gap: clamp(1.5rem, 4vw, 3rem);
   margin: 0;
-  padding-block: clamp(2.5rem, 5vw, 4.2rem);
+  padding-block: clamp(2.25rem, 4.3vw, 3.6rem);
   padding-inline: var(--edge);
   border-top: 1px solid rgba(221, 216, 204, .7);
   border-bottom: 1px solid rgba(221, 216, 204, .7);
@@ -270,8 +276,8 @@
 
 @media (max-width: 639px) {
   .courses-page.seo-hub-page .seo-hub-context {
-    padding-block: 2.2rem;
+    padding-block: 2rem;
     padding-inline: var(--edge);
-    gap: 1.45rem;
+    gap: 1.25rem;
   }
 }
