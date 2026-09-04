@@ -270,4 +270,24 @@
       <image:title>Yoga et mouvements au sol à Clisson</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://labola-clisson.fr/yoga-clisson/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://labola-clisson.fr/assets/images/catherine-yoga-1400.webp</image:loc>
+      <image:title>Yoga à Clisson</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://labola-clisson.fr/danse-clisson/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://labola-clisson.fr/assets/images/danse-contemporaine-1400.webp</image:loc>
+      <image:title>Danse à Clisson</image:title>
+    </image:image>
+  </url>
 </urlset>
