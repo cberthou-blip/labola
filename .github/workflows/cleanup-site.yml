@@ -1,0 +1,81 @@
+name: Nettoyage global temporaire
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cleanup-site.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Nettoyer les références obsolètes
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          text_extensions = {'.html', '.txt', '.xml', '.js', '.css'}
+          changed = []
+
+          for path in Path('.').rglob('*'):
+              if not path.is_file() or path.suffix.lower() not in text_extensions:
+                  continue
+              if '.git' in path.parts:
+                  continue
+
+              text = path.read_text(encoding='utf-8')
+              original = text
+
+              # Le théâtre enfants n'est plus proposé : supprimer les références
+              # éditoriales/SEO, tout en conservant les anciennes URLs de redirection.
+              text = text.replace('yoga, danse, méditation, théâtre et chant', 'yoga, danse, méditation et chant')
+              text = text.replace('yoga, danse, théâtre, chant, méditation', 'yoga, danse, chant, méditation')
+              text = text.replace('danse, théâtre, chant, méditation', 'danse, chant, méditation')
+              text = text.replace('méditation, théâtre et chant', 'méditation et chant')
+              text = text.replace('méditation, théâtre, chant', 'méditation, chant')
+              text = text.replace('"théâtre enfants",', '')
+              text = text.replace(',"théâtre enfants"', '')
+              text = text.replace('"théâtre enfants"', '')
+
+              # Corriger définitivement l'ancienne faute dans l'URL Afrovibes.
+              text = text.replace('/cours/danse-afrovibres-ade-adekambi/', '/cours/danse-afrovibes-ade-adekambi/')
+
+              # Nettoyage défensif des tableaux JSON après retrait éventuel d'un item.
+              text = text.replace('[,', '[').replace(',]', ']')
+              text = re.sub(r',\s*,', ',', text)
+
+              if text != original:
+                  path.write_text(text, encoding='utf-8')
+                  changed.append(str(path))
+
+          # Les anciennes images théâtre ne sont plus référencées.
+          for path in Path('assets/images').glob('theatre-enfants*'):
+              path.unlink()
+              changed.append(str(path))
+
+          print('Fichiers modifiés/supprimés :')
+          for item in changed:
+              print('-', item)
+
+      - name: Committer le nettoyage
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "Aucun changement nécessaire"
+            exit 0
+          fi
+          git config user.name "Charles BERTHOU"
+          git config user.email "cberthou@gmail.com"
+          git add -A
+          git commit -m "Nettoie les références obsolètes au théâtre"
+          git push origin main
