@@ -1,0 +1,116 @@
+name: Contrôle responsive temporaire pages SEO
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  responsive-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Installer Playwright
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install playwright@1.55.0 >/dev/null
+          npx playwright install --with-deps chromium >/dev/null
+
+      - name: Démarrer le site local
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 >/tmp/labola-http.log 2>&1 &
+          echo $! > /tmp/labola-http.pid
+          sleep 2
+
+      - name: Tester desktop, tablette et mobile
+        run: |
+          cat > /tmp/check-responsive.js <<'JS'
+          const { chromium } = require('playwright');
+
+          const pages = [
+            { path: '/cours/yoga-clisson/', name: 'Yoga' },
+            { path: '/cours/danse-clisson/', name: 'Danse' }
+          ];
+          const viewports = [
+            { width: 390, height: 844, label: 'mobile-390' },
+            { width: 430, height: 932, label: 'mobile-430' },
+            { width: 768, height: 1024, label: 'tablette-768' },
+            { width: 1440, height: 1000, label: 'desktop-1440' }
+          ];
+
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            let failed = false;
+
+            for (const item of pages) {
+              for (const vp of viewports) {
+                const page = await browser.newPage({ viewport: { width: vp.width, height: vp.height } });
+                await page.goto(`http://127.0.0.1:4173${item.path}`, { waitUntil: 'networkidle' });
+
+                const data = await page.evaluate(() => {
+                  const doc = document.documentElement;
+                  const courseLinks = [...document.querySelectorAll('.seo-hub-course-links a')];
+                  const navLinks = [...document.querySelectorAll('.seo-hub-nav-links a')];
+                  const menu = document.querySelector('.menu-button');
+                  const desktopNav = document.querySelector('.desktop-nav');
+                  const style = el => el ? getComputedStyle(el) : null;
+                  const box = el => el ? el.getBoundingClientRect() : null;
+                  const badCourseTargets = courseLinks.filter(a => box(a).height < 44 || box(a).width > innerWidth + 1).length;
+                  const badNavTargets = navLinks.filter(a => box(a).height < 44 || box(a).width > innerWidth + 1).length;
+                  const cardLefts = [...new Set(courseLinks.map(a => Math.round(box(a).left)))];
+                  return {
+                    title: document.title,
+                    h1: document.querySelector('h1')?.textContent?.trim(),
+                    scrollWidth: doc.scrollWidth,
+                    innerWidth,
+                    horizontalOverflow: doc.scrollWidth > innerWidth + 1,
+                    badCourseTargets,
+                    badNavTargets,
+                    menuDisplay: style(menu)?.display,
+                    desktopNavDisplay: style(desktopNav)?.display,
+                    courseColumns: cardLefts.length,
+                    cssLoaded: [...document.styleSheets].some(s => (s.href || '').includes('seo-hub.css'))
+                  };
+                });
+
+                const mobile = vp.width <= 560;
+                const errors = [];
+                if (data.horizontalOverflow) errors.push(`débordement horizontal ${data.scrollWidth}px > ${data.innerWidth}px`);
+                if (data.badCourseTargets) errors.push(`${data.badCourseTargets} zone(s) cours <44px ou trop larges`);
+                if (data.badNavTargets) errors.push(`${data.badNavTargets} zone(s) navigation <44px ou trop larges`);
+                if (!data.cssLoaded) errors.push('seo-hub.css non chargé');
+                if (!data.h1) errors.push('H1 absent');
+                if (mobile && data.menuDisplay === 'none') errors.push('menu mobile invisible');
+                if (mobile && data.desktopNavDisplay !== 'none') errors.push('navigation desktop encore visible sur mobile');
+                if (vp.width >= 980 && data.courseColumns < 3) errors.push(`grille desktop attendue sur 3 colonnes, obtenue: ${data.courseColumns}`);
+                if (vp.width < 640 && data.courseColumns !== 1) errors.push(`grille mobile attendue sur 1 colonne, obtenue: ${data.courseColumns}`);
+
+                console.log(`${item.name} / ${vp.label}: ${errors.length ? 'ECHEC' : 'OK'} | colonnes=${data.courseColumns} | largeur=${data.scrollWidth}/${data.innerWidth}`);
+                errors.forEach(e => console.log(`  - ${e}`));
+                if (errors.length) failed = true;
+
+                await page.screenshot({ path: `/tmp/${item.name.toLowerCase()}-${vp.label}.png`, fullPage: true });
+                await page.close();
+              }
+            }
+
+            await browser.close();
+            if (failed) process.exit(1);
+          })();
+          JS
+          node /tmp/check-responsive.js
+
+      - name: Publier les captures de contrôle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-hub-responsive-screenshots
+          path: /tmp/*.png
+          retention-days: 1
