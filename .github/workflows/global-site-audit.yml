@@ -1,0 +1,199 @@
+name: Audit global temporaire desktop mobile
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Installer les dépendances d'audit
+        run: pip install --quiet selenium beautifulsoup4
+
+      - name: Démarrer le site local
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 >/tmp/labola-http.log 2>&1 &
+          echo $! > /tmp/labola-http.pid
+          sleep 2
+
+      - name: Audit statique et responsive
+        run: |
+          cat > /tmp/audit.py <<'PY'
+          import json, os, re, time, urllib.parse, xml.etree.ElementTree as ET
+          from pathlib import Path
+          from bs4 import BeautifulSoup
+          from selenium import webdriver
+          from selenium.webdriver.chrome.options import Options
+          from selenium.webdriver.common.by import By
+
+          ROOT = Path.cwd()
+          BASE = 'https://labola-clisson.fr'
+          report = {'static_errors': [], 'browser_errors': [], 'warnings': [], 'pages': []}
+
+          # URLs indexables du sitemap
+          tree = ET.parse(ROOT / 'sitemap.xml')
+          ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+          urls = [n.text.strip() for n in tree.findall('.//s:loc', ns)]
+
+          def url_to_file(url):
+              p = urllib.parse.urlparse(url).path
+              if p == '/': return ROOT / 'index.html'
+              target = ROOT / p.lstrip('/')
+              if p.endswith('/'): target = target / 'index.html'
+              return target
+
+          def local_target_exists(raw, current_file):
+              if not raw or raw.startswith(('#','mailto:','tel:','javascript:','data:')): return True
+              u = urllib.parse.urlparse(raw)
+              if u.scheme in ('http','https'):
+                  if u.netloc not in ('labola-clisson.fr','www.labola-clisson.fr'): return True
+                  path = u.path
+              else:
+                  path = u.path
+              if not path: return True
+              if path.startswith('/'):
+                  t = ROOT / path.lstrip('/')
+              else:
+                  t = (current_file.parent / path).resolve()
+              if str(t).endswith('/') or path.endswith('/'):
+                  t = t / 'index.html'
+              if t.is_dir(): t = t / 'index.html'
+              return t.exists()
+
+          # Audit des pages du sitemap
+          for url in urls:
+              f = url_to_file(url)
+              if not f.exists():
+                  report['static_errors'].append(f'Sitemap: fichier absent pour {url}')
+                  continue
+              html = f.read_text(encoding='utf-8')
+              soup = BeautifulSoup(html, 'html.parser')
+              title = soup.title.get_text(strip=True) if soup.title else ''
+              if not title: report['static_errors'].append(f'{url}: title absent')
+              vp = soup.find('meta', attrs={'name':'viewport'})
+              if not vp: report['static_errors'].append(f'{url}: viewport absent')
+              h1s = soup.find_all('h1')
+              if len(h1s) != 1: report['static_errors'].append(f'{url}: {len(h1s)} H1')
+              can = soup.find('link', rel='canonical')
+              if not can or can.get('href') != url:
+                  report['static_errors'].append(f'{url}: canonical incorrect ({can.get("href") if can else "absent"})')
+              ids = [x.get('id') for x in soup.find_all(attrs={'id': True})]
+              dup = sorted({x for x in ids if ids.count(x) > 1})
+              if dup: report['static_errors'].append(f'{url}: IDs dupliqués {dup}')
+              for s in soup.find_all('script', attrs={'type':'application/ld+json'}):
+                  try: json.loads(s.string or s.get_text())
+                  except Exception as e: report['static_errors'].append(f'{url}: JSON-LD invalide: {e}')
+              for tag, attr in [('a','href'),('img','src'),('script','src'),('link','href'),('source','srcset')]:
+                  for el in soup.find_all(tag):
+                      raw = el.get(attr)
+                      if not raw: continue
+                      vals = [raw]
+                      if attr == 'srcset': vals = [part.strip().split()[0] for part in raw.split(',') if part.strip()]
+                      for val in vals:
+                          if not local_target_exists(val, f):
+                              report['static_errors'].append(f'{url}: ressource/lien interne absent {val}')
+
+          # Vérifier qu'aucune URL du sitemap n'est en double
+          if len(urls) != len(set(urls)):
+              report['static_errors'].append('Sitemap: URLs dupliquées')
+
+          # Chrome/Selenium
+          opts = Options()
+          opts.add_argument('--headless=new')
+          opts.add_argument('--no-sandbox')
+          opts.add_argument('--disable-dev-shm-usage')
+          opts.add_argument('--disable-gpu')
+          opts.set_capability('goog:loggingPrefs', {'browser': 'ALL'})
+          driver = webdriver.Chrome(options=opts)
+
+          viewports = [('mobile',390,844),('desktop',1440,1000)]
+          key_paths = {'/','/cours/','/planning/','/intervenants/','/location-salle/','/contact/','/cours/yoga-clisson/','/cours/danse-clisson/'}
+          os.makedirs('/tmp/audit-shots', exist_ok=True)
+
+          for url in urls:
+              path = urllib.parse.urlparse(url).path
+              local = 'http://127.0.0.1:4173' + path
+              for mode,w,h in viewports:
+                  driver.set_window_size(w,h)
+                  driver.get(local)
+                  time.sleep(0.12)
+                  data = driver.execute_script('''
+                    const vis = el => !!el && getComputedStyle(el).display !== 'none' && getComputedStyle(el).visibility !== 'hidden' && el.getBoundingClientRect().width > 0 && el.getBoundingClientRect().height > 0;
+                    const imgs=[...document.images].filter(vis);
+                    return {
+                      title: document.title,
+                      scrollWidth: document.documentElement.scrollWidth,
+                      innerWidth: window.innerWidth,
+                      h1: [...document.querySelectorAll('h1')].filter(vis).length,
+                      header: vis(document.querySelector('.site-header')),
+                      footer: vis(document.querySelector('.site-footer')),
+                      desktopNav: vis(document.querySelector('.desktop-nav')),
+                      mobileMenu: vis(document.querySelector('.mobile-menu .menu-button')),
+                      brokenImages: imgs.filter(i => !i.complete || i.naturalWidth === 0).map(i => i.getAttribute('src')),
+                      zeroLinks: [...document.querySelectorAll('a,button,summary')].filter(vis).filter(e => e.getBoundingClientRect().width < 1 || e.getBoundingClientRect().height < 1).length
+                    };
+                  ''')
+                  issues=[]
+                  if data['scrollWidth'] > data['innerWidth'] + 2: issues.append(f'débordement horizontal {data["scrollWidth"]}>{data["innerWidth"]}')
+                  if data['h1'] != 1: issues.append(f'H1 visible={data["h1"]}')
+                  if not data['header']: issues.append('header invisible')
+                  if not data['footer']: issues.append('footer invisible')
+                  if data['brokenImages']: issues.append('images cassées: ' + ', '.join(data['brokenImages']))
+                  if mode == 'mobile':
+                      if data['desktopNav']: issues.append('nav desktop visible sur mobile')
+                      if not data['mobileMenu']: issues.append('menu mobile invisible')
+                      try:
+                          menu = driver.find_element(By.CSS_SELECTOR, '.mobile-menu .menu-button')
+                          menu.click(); time.sleep(0.05)
+                          opened = driver.execute_script("const n=document.querySelector('.mobile-nav'); return !!n && getComputedStyle(n).display!=='none' && n.getBoundingClientRect().height>0")
+                          if not opened: issues.append('menu mobile ne s’ouvre pas')
+                      except Exception as e: issues.append('menu mobile non testable')
+                  else:
+                      if not data['desktopNav']: issues.append('nav desktop invisible')
+                  severe = [x for x in driver.get_log('browser') if x.get('level') == 'SEVERE']
+                  if severe: issues.append('console JS: ' + ' | '.join(x.get('message','')[:140] for x in severe[:3]))
+                  if issues:
+                      report['browser_errors'].append({'url':url,'mode':mode,'issues':issues})
+                  report['pages'].append({'url':url,'mode':mode,'scrollWidth':data['scrollWidth'],'innerWidth':data['innerWidth'],'issues':issues})
+                  if path in key_paths:
+                      name = ('home' if path=='/' else path.strip('/').replace('/','-')) + '-' + mode + '.png'
+                      driver.save_screenshot('/tmp/audit-shots/' + name)
+
+          driver.quit()
+          report['summary'] = {
+              'sitemap_pages': len(urls),
+              'viewports_tested': len(viewports),
+              'browser_page_tests': len(report['pages']),
+              'static_errors': len(report['static_errors']),
+              'browser_errors': len(report['browser_errors'])
+          }
+          Path('/tmp/audit-report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
+          print(json.dumps(report['summary'], ensure_ascii=False))
+          if report['static_errors']:
+              print('STATIC_ERRORS')
+              for x in report['static_errors']: print('-', x)
+          if report['browser_errors']:
+              print('BROWSER_ERRORS')
+              for x in report['browser_errors']: print('-', x)
+          # Ne pas faire échouer le job: on veut récupérer le rapport complet même avec anomalies.
+          PY
+          python /tmp/audit.py
+
+      - name: Publier le rapport et les captures
+        uses: actions/upload-artifact@v4
+        with:
+          name: global-site-audit
+          path: |
+            /tmp/audit-report.json
+            /tmp/audit-shots/*.png
+          retention-days: 1
