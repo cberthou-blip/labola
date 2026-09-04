@@ -1,0 +1,240 @@
+/* UI dédiée aux pages thématiques SEO Yoga / Danse.
+   Aucun style global du site n'est modifié ici. */
+
+.seo-hub-page .page-hero {
+  padding-top: clamp(3.1rem, 6vw, 4.6rem);
+  padding-bottom: clamp(2.2rem, 4vw, 3rem);
+}
+
+.seo-hub-page .page-hero h1 {
+  max-width: 13ch;
+}
+
+.seo-hub-page .page-hero p:last-of-type {
+  max-width: 720px;
+}
+
+.seo-hub-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin-top: 1.15rem;
+}
+
+.seo-hub-hero-actions .button {
+  min-height: 42px;
+  padding: .62rem .9rem;
+}
+
+.seo-hub-list {
+  padding-block: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.seo-hub-list .section-heading {
+  max-width: 720px;
+  margin-bottom: 1.15rem;
+}
+
+.seo-hub-list .section-heading p:last-child {
+  margin-bottom: 0;
+}
+
+.seo-hub-course-links {
+  gap: .7rem;
+}
+
+.seo-hub-course-links a,
+.seo-hub-nav-links a {
+  position: relative;
+  min-width: 0;
+  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+
+.seo-hub-course-links a {
+  min-height: 82px;
+  align-content: center;
+  padding: .95rem 2.8rem .95rem 1rem;
+}
+
+.seo-hub-course-links strong {
+  line-height: 1.25;
+}
+
+.seo-hub-course-links strong::after {
+  content: "→";
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  color: var(--green);
+  font-weight: 850;
+}
+
+.seo-hub-course-links span {
+  font-size: .93rem;
+  line-height: 1.35;
+}
+
+.seo-hub-course-links a:hover,
+.seo-hub-nav-links a:hover {
+  transform: translateY(-1px);
+}
+
+.seo-hub-course-links a:focus-visible,
+.seo-hub-nav-links a:focus-visible {
+  outline: 2px solid rgba(49, 92, 69, .55);
+  outline-offset: 3px;
+}
+
+.seo-hub-context {
+  padding-block: clamp(2.5rem, 5vw, 4.2rem);
+  border-top: 1px solid rgba(221, 216, 204, .7);
+  background: rgba(255, 255, 255, .26);
+}
+
+.seo-hub-context .rich-text {
+  max-width: 760px;
+}
+
+.seo-hub-context .rich-text h2:first-child {
+  margin-top: 0;
+}
+
+.seo-hub-context .rich-text h2 {
+  margin-top: 1.55rem;
+  font-size: clamp(1.45rem, 2.7vw, 2rem);
+}
+
+.seo-hub-context .rich-text p:last-child {
+  margin-bottom: 0;
+}
+
+.seo-hub-nav-links {
+  gap: .65rem;
+}
+
+.seo-hub-nav-links a {
+  min-height: 74px;
+  align-content: center;
+  padding: .9rem 1rem;
+}
+
+.seo-hub-nav-links strong {
+  font-size: .96rem;
+}
+
+.seo-hub-nav-links span {
+  font-size: .9rem;
+  line-height: 1.35;
+}
+
+.seo-hub-cta {
+  padding-block: clamp(2.35rem, 4.5vw, 3.7rem);
+}
+
+.seo-hub-cta h2 {
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+}
+
+.seo-hub-cta p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 640px) {
+  .seo-hub-course-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .seo-hub-nav-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 980px) {
+  .seo-hub-course-links {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .seo-hub-context {
+    grid-template-columns: minmax(0, 1.15fr) minmax(360px, .85fr);
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: start;
+  }
+}
+
+@media (max-width: 639px) {
+  .seo-hub-page .page-hero {
+    padding-top: 2.6rem;
+    padding-bottom: 2rem;
+  }
+
+  .seo-hub-page .page-hero h1 {
+    max-width: 12ch;
+  }
+
+  .seo-hub-page .page-hero p:last-of-type {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .seo-hub-hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+  }
+
+  .seo-hub-hero-actions .button {
+    width: 100%;
+    min-height: 46px;
+  }
+
+  .seo-hub-list,
+  .seo-hub-context {
+    padding-block: 2.2rem;
+  }
+
+  .seo-hub-list .section-heading {
+    margin-bottom: .95rem;
+  }
+
+  .seo-hub-course-links,
+  .seo-hub-nav-links {
+    grid-template-columns: 1fr;
+    gap: .55rem;
+  }
+
+  .seo-hub-course-links a {
+    min-height: 72px;
+    padding: .85rem 2.55rem .85rem .9rem;
+  }
+
+  .seo-hub-course-links strong {
+    font-size: .96rem;
+  }
+
+  .seo-hub-course-links span,
+  .seo-hub-nav-links span {
+    font-size: .88rem;
+  }
+
+  .seo-hub-nav-links a {
+    min-height: 68px;
+    padding: .82rem .9rem;
+  }
+
+  .seo-hub-context {
+    gap: 1.45rem;
+  }
+
+  .seo-hub-context .rich-text h2 {
+    margin-top: 1.3rem;
+  }
+
+  .seo-hub-cta {
+    padding-block: 2.2rem;
+  }
+
+  .seo-hub-cta .contact-actions {
+    width: 100%;
+  }
+}
